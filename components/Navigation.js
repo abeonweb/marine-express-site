@@ -1,13 +1,15 @@
-import { NavLink as Link } from "react-router-dom"
+import Link from "next/link"
+import { links } from "../data"
 
 export default function Navigation() {
     return (
         <header>
+            <h1 className="navTitle">MENL</h1>
             <nav>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/services">Services</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    {
+                        links.map(({ name, path }, i) => <li key={i}><Link href={path}>{name}</Link></li>)
+                }
                 </ul>
             </nav>
         </header>
