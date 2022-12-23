@@ -1,12 +1,11 @@
-
-
-.hero{
+.hero {
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   position: relative;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
 }
 
-.heroVideo{
+.heroVideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -16,12 +15,19 @@
   z-index: 90;
 }
 
-.overlay{
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .heroContainer {
@@ -33,32 +39,77 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 3em;
+  align-items: flex-start;
+  padding: 0 1em;
   color: var(--color-secondary);
   z-index: 100;
+  padding: 2em 3em 1em 2em;
+  margin-top: 5rem;
 }
+
 
 .heroTitle {
+  font-family: 'Manrope', sans-serif;
   font-size: 2em;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  padding-top: 2em;
 
 }
+
 
 .heroBody {
-  margin-top: 1em;
+  margin: 1em 0;
+  font-size: 1.2em;
   letter-spacing: 1px;
+  line-height: 1.4;
 }
 
+.ctaBtn {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  border: none;
+  margin: 2em 0;
+  padding: 1.2em 1.5em;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  border-radius: .5em;
+}
 
-@media (min-width: 700px){
-  .hero{
-    height: 100vh;
+@media (min-width: 790px) {
+  .hero {
+    height: 90vh;
   }
 
-  .heroVideo{
-    height: 100%;
+  .heroVideo {
     width: 100%;
   }
-  
+
+
+  .heroContainer {
+    max-width: 80%;
+    margin: 3em auto;
+    padding: 4em;
+  }
+
+  .heroTitle,
+  .heroBody {
+    max-width: 60%;
+  }
+
+  .heroTitle {
+    font-size: 3.6em;
+  }
+
+  .heroBody {
+    font-size: 2em;
+  }
+
 }
+
+/* @media (max-width: 575.98px) {
+  .hero .heroVideo {
+    display: none;
+  }
+} */
