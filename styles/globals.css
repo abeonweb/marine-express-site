@@ -10,7 +10,7 @@
 :root {
   --color-primary: #0b0474;
   --color-primary-2: #5b5b5b;
-  --color-secondary: #ffffff;
+  --color-secondary: #f0f0f0;
   --color-highlight-2: #036ec5;
   --color-highlight-3: #09edda;
   --color-highlight: #e41212;
@@ -23,9 +23,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Manrope', sans-serif;
-  background: rgb(255, 255, 255);
+  font-size: 1.2em;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  background: var(--color-secondary);
   color: var(--color-primary-2);
-  overflow-x: hidden;
+  overflow-x: hidden;/*carousel*/
 }
 
 a {
@@ -41,21 +44,29 @@ a {
   margin-top: 2em;
   padding: 0 0.5em;
   position: relative;
+  text-align: center;
 }
 
 .title::before {
   content: "";
   position: absolute;
   top: -.25em;
-  width: 18%;
+  width: 80px;
   height: 6px;
   background: rgb(2, 66, 131);
   background: linear-gradient(176deg, rgba(2, 66, 131, 1) 2%, rgba(41, 228, 188, 1) 64%, rgba(2, 35, 131, 1) 100%);
   border-radius: 10px;
+  /* transform: translateX(0); */
+  transition: 1.5s ease-in-out;
+}
+
+.title:hover::before {
+  transform: translateX(150%);
+  transition: 500ms ease-in-out;
 }
 
 .highlight {
-  color: #09edda;
+  color: #10beb0;
 }
 
 /* ******************Layout***************** */
@@ -65,7 +76,7 @@ a {
 }
 
 .top-section {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 1em;
 }
@@ -75,9 +86,8 @@ a {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
-  letter-spacing: 1px;
 }
 
 .bannerLink {

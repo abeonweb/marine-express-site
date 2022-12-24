@@ -5,7 +5,7 @@
     background-color: var(--color-secondary);
     height: 75px;
     display: flex;
-
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .navContent {
@@ -181,6 +181,7 @@
     font-size: 1.3em;
     padding: 3em 2em;
     display: flex;
+    gap: 2em;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -195,8 +196,9 @@
 
 .footerLogoContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1.5em;
+    align-items: last baseline;
     margin-top: 2.5em;
 }
 
@@ -211,10 +213,19 @@
     color: var(--color-highlight-3)
 }
 
+.subtitle {
+    font-size: 1.1em;
+    padding-bottom: 1em;
+}
+
+.footerLogo {
+    margin: 0 auto;
+}
+
 .image {
-    width: 50px;
-    height: 50px;
-    margin-left: 0.5em;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5em 0;
 }
 
 
@@ -280,9 +291,15 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        font-size: 1.5em;
     }
 
     .footerLogoContainer {
         margin-top: 0;
+    }
+
+    .image {
+        width: 50px;
+        height: 50px
     }
 }

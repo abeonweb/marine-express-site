@@ -6,27 +6,48 @@
 
 .title {
     font-size: 1.8em;
+
 }
 
 .text {
-    line-height: 1.5;
     margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .image {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    margin-top: 0.75em;
 }
 
 @media (min-width: 600px) {
     .article {
         margin: 4em 0 2em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+        grid-template-areas: 
+            "tt tt im im"
+            "tx tx im im"
+            "tx tx im im"
+            "tx tx im im";
     }
     
-    
     .title {
-        font-size: 2.2em;
+        font-size: 1.8em;
+        grid-area: tt;
+        text-align: center;
+    }
+
+    .image {
+        grid-area: im;
+        border-bottom-left-radius: 80px;
+    }
+
+    .text {
+        grid-area: tx;
+        padding: 0 1em;
     }
     
 }
