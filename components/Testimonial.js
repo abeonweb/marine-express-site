@@ -4,9 +4,9 @@ function Testimonial({ image, text, info }) {
     return (
         <article className={styles.testimonial}>
             <div className={styles.container}>
-                <img className={styles.image} src={image} alt="" />
+                {image && <img className={styles.image} src={image} alt="" />}
                 <blockquote className={styles.quote}>
-                    {text}
+                    "{text}"
                 </blockquote>
             </div>
             <div className={styles.info}>{info}</div>
