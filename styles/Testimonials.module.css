@@ -5,21 +5,42 @@
   letter-spacing: 1px;
   font-weight: 700;
   color: #5e5e5e;
-  margin: 8em 0 5em;
+  margin: 4em 0 5em;
+  padding: 4em 0;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  background: url("/images/happy-customer.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(3, 65, 110, 0.8);
+  z-index: 100;
 }
 
 .testimonial {
+  max-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 1em 0 2em;
+  position: relative;
+  z-index: 200;
 }
 
 .title {
   text-align: center;
   font-size: 1.8em;
   margin-bottom: 2em;
+  position: relative;
+  z-index: 200;
 }
 
 .container {
@@ -37,10 +58,8 @@
 }
 
 .quote {
-  width: 90%;
-  margin-top: 2em;
-  line-height: 1.5;
-  font-size: 1.3em;
+  line-height: 1.6;
+  font-size: 0.9em;
 }
 
 .info {
@@ -48,22 +67,27 @@
   margin: 1.5em 0 0 3em;
 }
 
+.info,
+.quote {
+  padding: 1em;
+}
+
 /* CAROUSEL */
 
 .carousel {
   width: 400%;
   position: relative;
-  top: 10%;
+  top: 0%;
   left: 0;
   height: 100%;
-  animation: slider 40s linear infinite;
+  animation: slider 30s linear infinite;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1em 0;
 }
 
-.carouselImageItem {
-  width: 100%;
-  height: fit-content;
+.carouselItem {
+  padding: 2em 0;
   background-size: cover;
   background-position: center;
 } 
@@ -98,6 +122,9 @@
   95% {
     left: -300%;
   }
+  99% {
+    left: -300%;
+  }
 
   100% {
     left: -400%;
@@ -107,13 +134,14 @@
 
 
 @media (min-width: 600px) {
-
+  .testimonials {
+    background-position: top center;
+  }
   .container {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2em;
   }
 
   .image-container {

@@ -6,9 +6,10 @@ import styles from "../styles/Testimonials.module.css"
 const Testimonials = () => {
   return (
     <section className={styles.testimonials}>
+      <div className={styles.overlay} />
       <h2 className={styles.title}>What our clients have to say</h2>
       <div className={styles.carousel}>
-        {testimonials.map((testimonial, i) => (<div key={i} className={styles.carouselImageItem}>
+        {testimonials.map((testimonial, i) => (<div key={i} className={styles.carouselItem}>
           <Testimonial  {...testimonial} />
         </div>))}
       </div>
