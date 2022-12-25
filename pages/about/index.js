@@ -6,7 +6,7 @@ import styles from "../../styles/About.module.css"
 const About = () => {
   return (
     <>
-      <section className="top-section">
+      <section className={`top-section ${styles.aboutSection}`}>
         <h1 className="title">Our years of <span className="highlight">experience</span> says a lot <span className="highlight">About us.</span></h1>
         {
           about.map(({ title, text, image }, i) => {

@@ -28,10 +28,10 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 1em;
         grid-template-areas: 
-            "tt tt im im"
+            "tt tt . ."
             "tx tx im im"
             "tx tx im im"
-            "tx tx im im";
+            "tx tx . .";
     }
     
     .title {
@@ -42,7 +42,8 @@
 
     .image {
         grid-area: im;
-        border-bottom-left-radius: 80px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
     }
 
     .text {
