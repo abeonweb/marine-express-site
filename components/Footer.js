@@ -21,7 +21,7 @@ const Footer = () => {
 
       {/* logo */}
       <div className={styles.footerLogoContainer}>
-        <h4 className={styles.footerTitle}>Marine Express <br /> Nigeria Limited</h4>
+        <Link href="/"> <h4 className={styles.footerTitle}>Marine Express <br /> Nigeria Limited</h4></Link>
         <div className={styles.footerLogo}>
           <img src="..\images\nacc.png" alt="" className={styles.image} />
           <img src="..\images\ancla.png" alt="" className={styles.image} />
