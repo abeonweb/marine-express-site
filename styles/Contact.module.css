@@ -1,0 +1,74 @@
+.workHoursContainer,
+.contactFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.workHoursContainer {
+    position: relative;
+}
+
+.workHours {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    padding: 1.5em;
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+.list {
+    font-size: 0.8em;
+    list-style: none;
+}
+
+.listItem {
+    padding-bottom: 0.75em;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.workHoursContainer .image {
+    object-position: 5em;
+}
+
+
+@media (min-width: 450px) {    
+    .workHours {
+        font-size: larger;
+        top: 15%;
+        left: 15%;
+    }
+
+}
+
+@media (min-width: 760px) {
+    .workHoursContainer {
+        flex-direction: row-reverse;
+    }
+
+    .workHours {
+        position: relative;
+    }
+
+    .contactFormContainer {
+        flex-direction: row;
+    }
+
+    .imageContainer {
+        width: 50%;
+    }
+
+}
