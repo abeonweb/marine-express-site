@@ -10,7 +10,7 @@ const Feature = ({ title, text, image, alt }) => {
           <img src={image} alt={alt} className={styles.image} />
           <div className={styles.textContainer}>
             <h2 className={styles.title}>{title}</h2>
-            <p className={styles.text}>{text}</p>
+            <p className={styles.captionText}>{text}</p>
           </div>
         </div>
       </article>
