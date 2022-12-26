@@ -12,17 +12,18 @@
 
 .workHours {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 2%;
     padding: 1.5em;
     color: var(--color-primary);
+    font-size: 1em;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .subtitle {
-    font-size: 1em;
-    margin-bottom: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
 }
 
 .list {
@@ -54,13 +55,18 @@
 
 }
 
-@media (min-width: 760px) {
+@media (min-width: 800px) {
     .workHoursContainer {
         flex-direction: row-reverse;
     }
 
     .workHours {
         position: relative;
+        display: flex;
+    }
+
+    .workHoursTextContainer {
+        align-self: center;
     }
 
     .contactFormContainer {
