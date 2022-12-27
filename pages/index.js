@@ -20,7 +20,7 @@ export default function Home() {
         <Features />      
         <Service />
         <Testimonials />
-        <Banner bannerText={"Don't know where to start"} link={"/services"}/>
+        <Banner bannerText={"Don't know where to start?"} link={"/services"}/>
       </main>
 
     </div>
