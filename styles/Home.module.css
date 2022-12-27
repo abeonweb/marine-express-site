@@ -58,9 +58,10 @@
 
 
 .heroBody {
-  margin: 1em 0;
+  width: 80%;
+  padding: 1em 2em 0 0;
   font-size: 1.2em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 1.4;
 }
 
@@ -97,7 +98,7 @@
   }
 
   .heroTitle {
-    font-size: 3.6em;
+    font-size: 3em;
   }
 
   .heroBody {
