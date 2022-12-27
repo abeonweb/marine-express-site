@@ -185,6 +185,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
 .footerLinksList {
@@ -292,6 +293,7 @@
         justify-content: space-around;
         align-items: center;
         font-size: 1.5em;
+        text-align: left;
     }
 
     .footerLogoContainer {
