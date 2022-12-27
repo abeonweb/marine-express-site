@@ -1,13 +1,27 @@
+.contact {
+    padding: 0;
+}
+
 .workHoursContainer,
 .contactFormContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 3em;
 }
 
 .workHoursContainer {
     position: relative;
+    justify-content: center;
+}
+
+.contactFormContainer {
+    justify-content: space-between;
+}
+
+.contactFormContainer .imageContainer {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 .workHours {
@@ -23,7 +37,8 @@
 
 .subtitle {
     font-size: 1.2em;
-    margin-bottom: 0.8em;
+    margin: 0.8em;
+    color: var(--color-primary);
 }
 
 .list {
@@ -37,6 +52,8 @@
 
 .image {
     width: 100%;
+    margin: 0 0 -0.45em 0;
+    padding: 0;
     object-fit: cover;
     object-position: top;
 }
@@ -45,14 +62,109 @@
     object-position: 5em;
 }
 
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1em 0 2em;
+}
 
-@media (min-width: 450px) {    
+.form {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    color: #515151;
+}
+
+.input,
+.formButton {
+    border-radius: 6px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.input {
+    padding: 0.3em 0.5em;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-secondary);
+    letter-spacing: 1px;
+}
+
+.input::placeholder {
+    color: var(--color-secondary);
+}
+
+.input:focus::placeholder {
+    color: var(--color-primary);
+}
+
+.input:focus {
+    background-color: var(--color-secondary);
+    color: #3b3a3a;
+    outline: 1px solid var(--color-highlight-3);
+}
+
+.formButton {
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 0.5em 0;
+}
+
+.formButton:hover {
+    background-color: var(--color-highlight);
+}
+
+.formButton:focus {
+    outline: 1px solid var(--color-highlight-3);
+}
+
+@media (min-width: 300px) {
     .workHours {
         font-size: larger;
         top: 15%;
         left: 15%;
     }
 
+    .formContainer {
+        position: absolute;
+        top: 5%;
+        bottom: 5%;
+        left: 5%;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(154, 154, 182, 0.3);
+        backdrop-filter: blur(2px);
+        box-shadow: 4px 4px 12px rgba(31, 31, 32, 0.7);
+
+    }
+
+    .input {
+        background-color: transparent;
+    }
+
+    .input::placeholder {
+        color: var(--color-secondary);
+    }
+
+    .input:focus::placeholder {
+        color: var(--color-primary);
+    }
+
+    .input:focus {
+        background-color: var(--color-secondary);
+        color: #3b3a3a;
+        outline: 1px solid var(--color-highlight-3);
+    }
 }
 
 @media (min-width: 800px) {
@@ -69,12 +181,40 @@
         align-self: center;
     }
 
-    .contactFormContainer {
+    /* .contactFormContainer {
         flex-direction: row;
-    }
+        justify-content: space-between;
+
+    } */
 
     .imageContainer {
         width: 50%;
     }
+
+    .contactFormContainer .imageContainer {
+        width: 100%;
+    }
+
+    .formContainer {
+        top: 23%;
+        bottom: 23%;
+        left: 25%;
+        right: 25%;
+    }
+
+    .form {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .textarea {
+        height: 150px;
+    }
+
+    /* .input::placeholder {
+        color: var(--color-primary);
+        letter-spacing: 1px;
+    } */
+
 
 }
