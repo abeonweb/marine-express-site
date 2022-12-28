@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/Home.module.css"
 
 function Hero() {
@@ -14,7 +15,7 @@ function Hero() {
           With more than 30 years experience. You can rely on us to get
           your business where it needs to be.
         </p>
-        <button className={styles.ctaBtn}>Get started</button>
+        <Link href={"/services"} className={styles.ctaBtn}>Get started</Link>
       </div>
     </section>
   );
