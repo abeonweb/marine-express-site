@@ -40,7 +40,7 @@ const about = [
     },
     {
         title: "Mission Statement",
-        image:"../images/trucks.webp",
+        image:"../images/marine-express-truck.webp",
         text: [`MENL sets the pace in the clearing and forwarding agency sector by making general importation and exportation an easy and comfortable venture. 
         We not only ensure a safe and timely delivery of merchandise, we get your business where it needs to be in terms of our service delivery.
         We secure cost effectiveness for you and your business without compromising quality of service. Bringing you the needed rest of mind.`],
@@ -128,7 +128,7 @@ const links = [
         path: "/services"
     },
     {
-        name: "About us",
+        name: "Our Business",
         path: "/about"
     },
     {

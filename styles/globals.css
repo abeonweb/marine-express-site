@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&family=Manrope:wght@200;400;600;700&family=Work+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;900&family=Manrope:wght@200;400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -9,11 +9,11 @@
 
 :root {
   --color-primary: #0b0474;
-  --color-secondary: #ffffff;
-  --color-highlight-1: #5b5b5b;
+  --color-secondary: #fcfcfc;
+  --color-dark: #5b5b5b;
+  --color-highlight: #e41212;
   --color-highlight-2: #036ec5;
   --color-highlight-3: #09edda;
-  --color-highlight: #e41212;
   font-size: 62.5%;
   ;
 }
@@ -27,7 +27,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.1rem;
   background: var(--color-secondary);
-  color: var(--color-highlight-1);
+  color: var(--color-dark);
   overflow-x: hidden;/*carousel*/
 }
 

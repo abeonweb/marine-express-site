@@ -2,25 +2,24 @@ import React from 'react'
 import Form from "../../components/Form"
 import Banner from "../../components/Banner"
 import styles from "../../styles/Contact.module.css"
+import Image from "next/image"
 
+const days = ["monday", "tuesday", "wednesday", "thursday", "friday"]
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className={styles.contact}>
       <h1 className="title">Contact</h1>
+      <p className={styles.text}>Logistics done right can cause business growth qnd increase profits. We can help.</p>
       <section className={`top-section ${styles.contact}`}>
         <div className={styles.workHoursContainer}>
           <div className={styles.imageContainer}>
-            <img src="../images/headset-man.webp" alt="" className={styles.image} />
+            <Image src="../images/headset-man.webp" alt="" className={styles.image} />
           </div>
           <div className={styles.workHours}>
             <div className={styles.workHoursTextContainer}>
               <h3 className={styles.subtitle}>Open Hours</h3>
               <ul className={styles.list}>
-                <li className={styles.listItem}>Monday: 9:00AM - 6:00PM</li>
-                <li className={styles.listItem}>Tuesday: 9:00AM - 6:00PM</li>
-                <li className={styles.listItem}>Wednesday: 9:00AM - 6:00PM</li>
-                <li className={styles.listItem}>Thursday: 9:00AM - 6:00PM</li>
-                <li className={styles.listItem}>Friday: 9:00AM - 6:00PM</li>
+                {days.map(day => <li key={day} className={styles.listItem}>{day}: 9:00AM - 6:00PM</li>)}
               </ul>
             </div>
           </div>
@@ -29,10 +28,11 @@ const Contact = () => {
       <Banner bannerText="Want to know what we do?" link="/services" />
       <section className={`top-section ${styles.contact}`}>
         <div className={styles.contactFormContainer}>
-          <h3 className={styles.subtitle}>Contact us</h3>
+          <h3 className={styles.subtitle}>Send us a message</h3>
           <div className={styles.imageContainer}>
-            <img src="../images/woman-phone.webp" alt="" className={styles.image} />
+            <Image src="../images/woman-phone.webp" alt="" className={styles.image} />
             <div className={styles.formContainer}>
+              <p className={styles.text}>Have questions before you make a decision? We are happy to help.</p>
               <Form />
             </div>
           </div>

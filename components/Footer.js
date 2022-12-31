@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../styles/Navigation.module.css"
 import { links } from "../data"
 import Link from "next/link"
+import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -23,8 +24,8 @@ const Footer = () => {
       <div className={styles.footerLogoContainer}>
         <Link href="/"> <h4 className={styles.footerTitle}>Marine Express <br /> Nigeria Limited</h4></Link>
         <div className={styles.footerLogo}>
-          <img src="..\images\nacc.png" alt="" className={styles.image} />
-          <img src="..\images\ancla.png" alt="" className={styles.image} />
+          <Image src="..\images\nacc.png" alt="" className={styles.image} />
+          <Image src="..\images\ancla.png" alt="" className={styles.image} />
         </div>
       </div>
 

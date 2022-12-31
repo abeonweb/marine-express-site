@@ -2,6 +2,14 @@
     padding: 0;
 }
 
+.text {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1em 1em 2em;
+    color: var(--color-primary);
+    text-align: center;
+}
+
 .workHoursContainer,
 .contactFormContainer {
     display: flex;
@@ -13,6 +21,30 @@
     justify-content: center;
 }
 
+.workHours {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    padding: 0.5em;
+    color: var(--color-primary);
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.workHoursContainer .image {
+    object-position: 5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin: 0.8em;
+    color: var(--color-primary);
+}
+
+
+
+/* ******************FORM************************ */
 .contactFormContainer {
     justify-content: space-between;
 }
@@ -24,22 +56,12 @@
     object-fit: cover;
 }
 
-.workHours {
-    position: absolute;
-    top: 8%;
-    left: 2%;
-    padding: 1.5em;
-    color: var(--color-primary);
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 1px;
+.contactFormContainer .subtitle {
+    text-align: center;
+    padding: 2em 0;
+    font-size: 1.8em;
 }
 
-.subtitle {
-    font-size: 1.2em;
-    margin: 0.8em;
-    color: var(--color-primary);
-}
 
 .list {
     font-size: 0.8em;
@@ -48,122 +70,112 @@
 
 .listItem {
     padding-bottom: 0.75em;
+    text-transform: capitalize;
 }
 
 .image {
     width: 100%;
-    margin: 0 0 -0.45em 0;
+    margin: 0 0 -0.40em 0;
     padding: 0;
     object-fit: cover;
     object-position: top;
 }
 
-.workHoursContainer .image {
-    object-position: 5em;
-}
 
 .formContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 1em 0 2em;
+    padding: 2em 2em 6em;
 }
 
 .form {
     width: 100%;
-    padding: 1em;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1em;
-    color: #515151;
 }
 
 .input,
 .formButton {
     border-radius: 6px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .input {
-    padding: 0.3em 0.5em;
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    color: var(--color-secondary);
+    padding: 0.75em .5em;
+    font-weight: 400;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-primary);
     letter-spacing: 1px;
 }
 
+.textarea {
+    height: 180px;
+    line-height: 1.6;
+}
+
 .input::placeholder {
-    color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.input:focus {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-highlight-3);
+    outline: 1px solid var(--color-highlight-3);
 }
 
 .input:focus::placeholder {
     color: var(--color-primary);
 }
 
-.input:focus {
-    background-color: var(--color-secondary);
-    color: #3b3a3a;
-    outline: 1px solid var(--color-highlight-3);
-}
-
 .formButton {
     border: none;
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    padding: 0.5em 0;
+    padding: 1em 0;
+    margin-top: 1em;
+    font-weight: 700;
 }
 
 .formButton:hover {
-    background-color: var(--color-highlight);
+    background-color: var(--color-highlight-3);
+    color: var(--color-primary);
 }
 
 .formButton:focus {
     outline: 1px solid var(--color-highlight-3);
 }
 
-@media (min-width: 300px) {
+
+/* *************** MEDIA QUERIES ********************** */
+@media (min-width: 400px) {
     .workHours {
-        font-size: larger;
-        top: 15%;
-        left: 15%;
-    }
-
-    .formContainer {
-        position: absolute;
+        font-size: 1.4em;
         top: 5%;
-        bottom: 5%;
         left: 5%;
-        right: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(154, 154, 182, 0.3);
-        backdrop-filter: blur(2px);
-        box-shadow: 4px 4px 12px rgba(31, 31, 32, 0.7);
-
+        bottom: 5%;
     }
 
-    .input {
-        background-color: transparent;
+    .contactFormContainer .imageContainer .image {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .workHours {
+        font-size: 1.6em;
+        top: 10%;
+        left: 10%;
     }
 
-    .input::placeholder {
-        color: var(--color-secondary);
-    }
-
-    .input:focus::placeholder {
-        color: var(--color-primary);
-    }
-
-    .input:focus {
-        background-color: var(--color-secondary);
-        color: #3b3a3a;
-        outline: 1px solid var(--color-highlight-3);
+    .contactFormContainer .image {
+        object-position: 0 -80px;
     }
 }
 
@@ -174,47 +186,18 @@
 
     .workHours {
         position: relative;
-        display: flex;
     }
 
     .workHoursTextContainer {
         align-self: center;
     }
 
-    /* .contactFormContainer {
-        flex-direction: row;
-        justify-content: space-between;
-
-    } */
-
-    .imageContainer {
+    .workHoursContainer .imageContainer {
         width: 50%;
     }
 
-    .contactFormContainer .imageContainer {
-        width: 100%;
+    .workHoursTextContainer {
+        margin-right: -6em;
     }
-
-    .formContainer {
-        top: 23%;
-        bottom: 23%;
-        left: 25%;
-        right: 25%;
-    }
-
-    .form {
-        max-width: 70%;
-        margin: 0 auto;
-    }
-
-    .textarea {
-        height: 150px;
-    }
-
-    /* .input::placeholder {
-        color: var(--color-primary);
-        letter-spacing: 1px;
-    } */
-
 
 }

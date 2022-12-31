@@ -18,7 +18,8 @@
 .navTitle {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 900;
-    color: var(--color-primary)
+    color: var(--color-primary);
+    user-select: none;
 }
 
 

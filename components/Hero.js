@@ -1,14 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Home.module.css"
 
 function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay} />
-      <video autoPlay muted loop className={styles.heroVideo} poster="../images/poster.png">
+      <video autoPlay muted loop className={styles.heroVideo} poster="../images/closing-deal.webp">
         <source src="../images/marine-express-intro.mp4" type="video/mp4" />
       </video>
-      {/* <img alt="poster image mobile" className={styles.poster} src="../images/poster.png" /> */}
+      {/* <Image alt="poster image mobile" className={styles.poster} src="../images/closing-deal.webp" /> */}
       <div className={styles.heroContainer}>
         <h1 className={styles.heroTitle}>Leading the Way In Business Logistics</h1>
         <p className={styles.heroBody}>
