@@ -7,7 +7,7 @@ import Image from "next/image"
 const ServiceDetails = () => {
     const router = useRouter()
     const id = router.query.serviceId
-    const { title, image, list } = services.find(service => service.title == id)
+    const { title, image, list } = services.find(service => service.id == id)
 
     return (
         <article className={styles.article}>

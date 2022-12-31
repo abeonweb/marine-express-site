@@ -49,6 +49,7 @@ const about = [
 
 const services =[
     {
+        id: "clearing",
         title: "Clearing",
         image: "../images/wharf.webp",
         text: "Specialised services we provide as a customs agent to our clients",
@@ -67,6 +68,7 @@ const services =[
 
     },
     {
+        id: "forwarding",
         title: "Forwarding",
         image: "../images/cargo-plane.webp",
         text: "Our services as forwarders is complete. Full logistic support",
@@ -92,6 +94,7 @@ const services =[
 
     },
     {
+        id: "haulage",
         title: "Haulage",
         image: "../images/trucks.webp",
         text: "Point to point delivery of goods",
