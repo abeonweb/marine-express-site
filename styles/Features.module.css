@@ -65,7 +65,7 @@
     font-size: 1.5rem;
     color: var(--color-dark);
     padding: 2em 3em 2em;
-    text-align: justify;
+    text-align: center;
 }
 
 .text:last-of-type {
@@ -74,7 +74,7 @@
 
 .captionText {
     padding: 0 0 2em;
-    text-align: justify;
+    text-align: left;
 }
 
 
