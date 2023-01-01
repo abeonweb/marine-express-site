@@ -8,6 +8,8 @@ const ServiceDetails = () => {
     const serviceId = router.query.serviceId
     const service = services.find(service => service.title == serviceId) || null
 
+    if(null) return
+    
     return (
         <article className={styles.article}>
             <h1 className={`title ${styles.serviceTitle}`}>{service.title}</h1>
