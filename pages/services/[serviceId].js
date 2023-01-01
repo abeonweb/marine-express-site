@@ -6,7 +6,7 @@ import styles from "../../styles/ServiceId.module.css"
 const ServiceDetails = () => {
     const router = useRouter()
     const serviceId = router.query.serviceId
-    const service = services.find(service => service.title == serviceId)
+    const service = services.find(service => service.title == serviceId) || null
 
     return (
         <article className={styles.article}>
