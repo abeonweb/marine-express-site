@@ -9,8 +9,8 @@ const Services = () => {
       <h1 className="title">What is your next project?</h1>
       <ul className={styles.list}>
         {services.map(service => (
-          <li className={styles.listItem} key={service.title}>
-            <Link className={styles.link} href={`/services/${service.id}`}>
+          <li className={styles.listItem} key={service.id}>
+            <Link className={styles.link} href={`/services/${service.title}`}>
               <article className={styles.article}>
                 <img className={styles.image} src={service.image} alt="" />
                 <h3 className={styles.subtitle}>{service.title}</h3>
