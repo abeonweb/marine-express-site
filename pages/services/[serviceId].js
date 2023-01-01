@@ -5,15 +5,15 @@ import styles from "../../styles/ServiceId.module.css"
 
 const ServiceDetails = () => {
     const router = useRouter()
-    const id = router.query.serviceId
-    const { title, image, list } = services.find(service => service.id == id)
+    const serviceId = router.query.serviceId
+    const service = services.find(service => service.title == serviceId)
 
     return (
         <article className={styles.article}>
-            <h1 className={`title ${styles.serviceTitle}`}>{title}</h1>
-            <img className={styles.image} src={image} alt="" />
+            <h1 className={`title ${styles.serviceTitle}`}>{service.title}</h1>
+            <img className={styles.image} src={service.image} alt="" />
             <ul className={styles.list}>
-                {list.map((item, i) => <li className={styles.listItem} key={i}>{item}</li>)}
+                {service.list.map((item, i) => <li className={styles.listItem} key={i}>{item}</li>)}
             </ul>
         </article>
     )
