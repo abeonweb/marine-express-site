@@ -10,7 +10,7 @@ const features = [
         title: "Complete Transportation Offerings",
         image: "../images/delivery.webp",
         alt: "",
-        text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that tranport all across Nigeria",
+        text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that transport all across Nigeria",
     },
     {
         title: "Warehousing Solutions",
