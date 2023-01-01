@@ -11,8 +11,8 @@ const Service = () => {
                 {
                     services.map(({ title, text, image }, i) => {
                         return (
-                            <Link className={styles.link} href={`/services/${title}`}>
-                                <article key={i} className={styles.article}>
+                            <Link key={i} className={styles.link} href={`/services/${title}`}>
+                                <article className={styles.article}>
                                     <img src={image} className={styles.image} alt="" />
                                     <div
                                         className={styles.textContainer}
