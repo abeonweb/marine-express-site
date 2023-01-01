@@ -1,6 +1,5 @@
 import { useEffect } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import useOpen from "../hooks/useOpen"
 import { links } from "../data"
 import styles from "../styles/Navigation.module.css"
@@ -29,7 +28,7 @@ export default function Navigation() {
         <header id="header" className={`${styles.header} ${open ? styles.navOpen : null}`} >
             <div className={styles.navContent}>
                 <div className={styles.navLogo} >
-                    {/* <Image src="" className={styles.logoImage} alt="" /> */}
+                    {/* <img src="" className={styles.logoImage} alt="" /> */}
                     <Link href="/"><h1 className={styles.navTitle}>MENL</h1></Link>
                 </div>
                 <div onClick={handleClick} className={styles.menuIcon}>

@@ -13,7 +13,7 @@ const Contact = () => {
       <section className={`top-section ${styles.contact}`}>
         <div className={styles.workHoursContainer}>
           <div className={styles.imageContainer}>
-            <Image src="../images/headset-man.webp" alt="" className={styles.image} />
+            <img src="../images/headset-man.webp" alt="" className={styles.image} />
           </div>
           <div className={styles.workHours}>
             <div className={styles.workHoursTextContainer}>
@@ -30,7 +30,7 @@ const Contact = () => {
         <div className={styles.contactFormContainer}>
           <h3 className={styles.subtitle}>Send us a message</h3>
           <div className={styles.imageContainer}>
-            <Image src="../images/woman-phone.webp" alt="" className={styles.image} />
+            <img src="../images/woman-phone.webp" alt="" className={styles.image} />
             <div className={styles.formContainer}>
               <p className={styles.text}>Have questions before you make a decision? We are happy to help.</p>
               <Form />

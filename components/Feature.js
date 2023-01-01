@@ -1,4 +1,3 @@
-import Image from "next/image"
 import React from 'react'
 import styles from '../styles/Features.module.css'
 
@@ -8,7 +7,7 @@ const Feature = ({ title, text, image, alt }) => {
     <div className={styles.featureContainer}>
       <article className={styles.feature}>
         <div className={styles.imageTextContainer}>
-          <Image src={image} alt={alt} className={styles.image} />
+          <img src={image} alt={alt} className={styles.image} />
           <div className={styles.textContainer}>
             <h2 className={styles.title}>{title}</h2>
             <p className={styles.captionText}>{text}</p>

@@ -1,4 +1,3 @@
-import Image from "next/image"
 import React from 'react'
 import { services } from "../data"
 import styles from "../styles/Service.module.css"
@@ -12,7 +11,7 @@ const Service = () => {
                     services.map(({ title, text, image }, i) => {
                         return (
                             <article key={i} className={styles.article}>
-                                <Image src={image} className={styles.image} alt="" />
+                                <img src={image} className={styles.image} alt="" />
                                 <div
                                     className={styles.textContainer}
                                 >

@@ -1,4 +1,3 @@
-import Image from "next/image"
 import React from 'react'
 import Banner from "../../components/Banner"
 import { about } from "../../data"
@@ -14,7 +13,7 @@ const About = () => {
             return (
               <article key={i} className={styles.article}>
                 <h2 className={styles.title}>{title}</h2>
-                <Image src={image} alt="" className={styles.image} />
+                <img src={image} alt="" className={styles.image} />
                 {text.map((paragraph, index) => <p key={index} className={styles.text}>{paragraph}</p>)}
               </article>
             )
