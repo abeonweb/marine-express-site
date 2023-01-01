@@ -10,7 +10,7 @@ const Services = () => {
       <ul className={styles.list}>
         {services.map(service => (
           <li className={styles.listItem} key={service.title}>
-            <Link className={styles.link} href={`/services/${service.title}`}>
+            <Link className={styles.link} href={`/services/${service.id}`}>
               <article className={styles.article}>
                 <img className={styles.image} src={service.image} alt="" />
                 <h3 className={styles.subtitle}>{service.title}</h3>
