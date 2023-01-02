@@ -12,7 +12,7 @@ const Contact = ({ days }) => {
       <section className={`top-section ${styles.contact}`}>
         <div className={styles.workHoursContainer}>
           <div className={styles.imageContainer}>
-            <img src="../images/headset-man.webp" alt="" className={styles.image} />
+            <img src="../images/headset-man.png" alt="" className={styles.image} />
           </div>
           <div className={styles.workHours}>
             <div className={styles.workHoursTextContainer}>
