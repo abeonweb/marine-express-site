@@ -3,13 +3,11 @@ import { services } from "../../data"
 import { useRouter } from "next/router"
 import styles from "../../styles/ServiceId.module.css"
 
-const ServiceDetails = () => {
+const ServiceDetails = ({ services }) => {
     const router = useRouter()
     const serviceId = router.query.serviceId
-    const service = services.find(service => service.title == serviceId) || null
+    const service = services.find(service => service.title == serviceId)
 
-    if(null) return
-    
     return (
         <article className={styles.article}>
             <h1 className={`title ${styles.serviceTitle}`}>{service.title}</h1>
@@ -19,6 +17,25 @@ const ServiceDetails = () => {
             </ul>
         </article>
     )
+}
+
+export async function getStaticPaths() {
+    return {
+        paths: [
+            { params: { serviceId: 'Clearing' } },
+            { params: { serviceId: 'Forwarding' } },
+            { params: { serviceId: 'Haulage' } }
+        ],
+        fallback: false,
+    }
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            services
+        },
+    }
 }
 
 export default ServiceDetails

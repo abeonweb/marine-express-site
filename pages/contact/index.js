@@ -2,10 +2,9 @@ import React from 'react'
 import Form from "../../components/Form"
 import Banner from "../../components/Banner"
 import styles from "../../styles/Contact.module.css"
-import Image from "next/image"
+import { days } from "../../data"
 
-const days = ["monday", "tuesday", "wednesday", "thursday", "friday"]
-const Contact = () => {
+const Contact = ({ days }) => {
   return (
     <div className={styles.contact}>
       <h1 className="title">Contact</h1>
@@ -41,5 +40,14 @@ const Contact = () => {
     </div>
   )
 }
+
+export async function getStaticProps(){
+  return {
+    props: {
+      days
+    }
+  }
+}
+
 
 export default Contact
