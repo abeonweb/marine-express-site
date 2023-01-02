@@ -58,7 +58,7 @@ const services =[
             "Adequate information about ship movement with their cargo. That is name of ship agents, arrival and berthing dates of the ship, and the port of discharge",
             "submission and completion of all necessary shipping / NPA documentation",
             "Processing of all customs documents to the final relaeasing stage",
-            "Supervision of discharging and loading operations", ,
+            "Supervision of discharging and loading operations",
             "Supervision and sighting of goods discharged from the carrying vessel to arrange for private  protection so as to prevent pilfering",
             "Delivery of consignment to the importers premises or warehouse", ,
             "Providing information about duty payments through any of the designated banks to the importers, in order to avoid unnecessary delays",
@@ -74,22 +74,14 @@ const services =[
         text: "Our services as forwarders is complete. Full logistic support",
         list: [
             "Liase effectively with the exporters on how to register with the Nigerian Export Promotion Council",
-
             "Process of export Bill of Entry with customs",
-
             "Booking of space with the shipping company up to final destination",
-
             "Securing of competitive freight rates",
-
             "Provision of adequate warehousing if required",
-
             "Processing of export documents with the relevant port operators i.e Nigeria Ports Authority,  National Maritime Authority, Shipping Companies",
-
             " Securing all export clearances form the approriate Govenment agencies such as the National Drug Law Enforcement Agency, State Security Services, Ministry of Agriculture etc",
-
             " Collection of Bill of Lading and other vital documents from shipping companies for immediate deleivery to the exporter",
-
-            " Effective haulage syatem for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
+            " Effective haulage system for all cargoes both containarized and palletised up to the carrying shipping company terminal",
         ]
 
     },
@@ -100,22 +92,14 @@ const services =[
         text: "Point to point delivery of goods",
         list: [
             "Liase effectively with the exporters on how to register with the Nigerian Export Promotion Council",
-
             "Process of export Bill of Entry with customs",
-
             "Booking of space with the shipping company up to final destination",
-
             "Securing of competitive freight rates",
-
             "Provision of adequate warehousing if required",
-
             "Processing of export documents with the relevant port operators i.e Nigeria Ports Authority,  National Maritime Authority, Shipping Companies",
-
             " Securing all export clearances form the approriate Govenment agencies such as the National Drug Law Enforcement Agency, State Security Services, Ministry of Agriculture etc",
-
             " Collection of Bill of Lading and other vital documents from shipping companies for immediate deleivery to the exporter",
-
-            " Effective haulage syatem for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
+            " Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
         ]
 
     },
@@ -167,4 +151,6 @@ const testimonials = [
 
 ]
 
-export { features, links, testimonials, about, services }
+const days = ["monday", "tuesday", "wednesday", "thursday", "friday"]
+
+export { features, links, testimonials, about, services, days }
