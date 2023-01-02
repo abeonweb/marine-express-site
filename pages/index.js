@@ -5,7 +5,7 @@ import Testimonials from "../components/Testimonials"
 import Banner from "../components/Banner"
 import Service from "../components/Service"
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -18,4 +18,12 @@ export default function Home() {
 
     </div>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+
+    }
+  }
 }

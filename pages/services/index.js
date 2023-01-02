@@ -3,12 +3,12 @@ import { services } from "../../data"
 import styles from "../../styles/Services.module.css"
 import Link from "next/link"
 
-const Services = () => {
+const Services = (props) => {
   return (
     <section className="top-section">
       <h1 className="title">What is your next project?</h1>
       <ul className={styles.list}>
-        {services.map(service => (
+        {props.services.map(service => (
           <li className={styles.listItem} key={service.id}>
             <Link className={styles.link} href={`/services/${service.title}`}>
               <article className={styles.article}>
@@ -21,6 +21,16 @@ const Services = () => {
       </ul>
     </section>
   )
+}
+
+
+
+export async function getStaticProps() {
+  return {
+    props: {
+      services
+    },
+  }
 }
 
 export default Services

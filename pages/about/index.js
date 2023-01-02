@@ -3,7 +3,7 @@ import Banner from "../../components/Banner"
 import { about } from "../../data"
 import styles from "../../styles/About.module.css"
 
-const About = () => {
+const About = ({ about }) => {
   return (
     <>
       <section className={`top-section ${styles.aboutSection}`}>
@@ -23,6 +23,14 @@ const About = () => {
       <Banner bannerText={"Ready for your next great business decision?"} link={"/contact"} />
     </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      about
+    },
+  }
 }
 
 export default About
