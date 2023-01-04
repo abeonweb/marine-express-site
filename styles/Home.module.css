@@ -22,7 +22,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 100;
 }
 
@@ -42,23 +42,24 @@
 }
 
 
+.heroTitle,
 .heroTitle {
   font-family: 'Manrope', sans-serif;
-  font-size: 2em;
+  width: 80%;
   font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 1.4;
-  padding-top: 2em;
 
 }
 
+.heroTitle {
+  font-size: 2em;
+  padding-top: 2em;
+}
 
 .heroBody {
-  width: 80%;
-  padding: 1em 2em 0 0;
   font-size: 1.2em;
-  letter-spacing: 2px;
-  line-height: 1.4;
+  padding: 1em 2em 0 0;
 }
 
 .ctaBtn {
@@ -85,24 +86,41 @@
   }
 
   .heroContainer {
-    max-width: 80%;
     margin: 3em auto;
     padding: 4em;
   }
-
+  
   .heroTitle,
   .heroBody {
     max-width: 90%;
   }
-
+  
   .heroTitle {
     font-size: 3em;
   }
-
+  
   .heroBody {
     font-size: 1.8em;
   }
+  
+}
 
+@media screen and (orientation: landscape) {
+  .heroContainer {
+    max-width: 90%;
+    margin: 1em auto;
+    padding: 2em;
+  }
+
+  .heroTitle {
+    font-size: 2.2em;
+    padding-top: 0.5em;
+  }
+  
+  .heroBody {
+    font-size: 1.4em;
+  }
+  
 }
 
 /* @media (max-width: 575.98px) {
