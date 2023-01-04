@@ -10,6 +10,7 @@ const SharedLayout = ({ children }) => {
             <Head>
                 <title>Marine Express Nigeria Limited</title>
                 <meta name="description" content="Licensed clearing and forwarding agent. We handle logistics to and from Nigeria." />
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main id="main">{children}</main>
