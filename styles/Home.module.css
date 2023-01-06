@@ -105,8 +105,8 @@
   
 }
 
-@media screen and (orientation: landscape) {
-  .heroContainer {
+/*@media screen and (orientation: landscape) {
+   .heroContainer {
     max-width: 90%;
     margin: 1em auto;
     padding: 2em;
@@ -120,10 +120,10 @@
   .heroBody {
     font-size: 1.4em;
   }
-  
+   
 }
 
-/* @media (max-width: 575.98px) {
+@media (max-width: 575.98px) {
   .hero .heroVideo {
     display: none;
   }
