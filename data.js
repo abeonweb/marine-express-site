@@ -81,7 +81,6 @@ const services =[
             "Processing of export documents with the relevant port operators i.e Nigeria Ports Authority,  National Maritime Authority, Shipping Companies",
             " Securing all export clearances form the approriate Govenment agencies such as the National Drug Law Enforcement Agency, State Security Services, Ministry of Agriculture etc",
             " Collection of Bill of Lading and other vital documents from shipping companies for immediate deleivery to the exporter",
-            " Effective haulage system for all cargoes both containarized and palletised up to the carrying shipping company terminal",
         ]
 
     },
@@ -91,15 +90,9 @@ const services =[
         image: "../images/trucks.webp",
         text: "Point to point delivery of goods",
         list: [
-            "Liase effectively with the exporters on how to register with the Nigerian Export Promotion Council",
-            "Process of export Bill of Entry with customs",
-            "Booking of space with the shipping company up to final destination",
-            "Securing of competitive freight rates",
+            "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
             "Provision of adequate warehousing if required",
-            "Processing of export documents with the relevant port operators i.e Nigeria Ports Authority,  National Maritime Authority, Shipping Companies",
-            " Securing all export clearances form the approriate Govenment agencies such as the National Drug Law Enforcement Agency, State Security Services, Ministry of Agriculture etc",
-            " Collection of Bill of Lading and other vital documents from shipping companies for immediate deleivery to the exporter",
-            " Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
+            "Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
         ]
 
     },
