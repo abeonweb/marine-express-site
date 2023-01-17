@@ -10,8 +10,10 @@ function Hero() {
       </video>
       {/* <img alt="poster image mobile" className={styles.poster} src="../images/ships.webp" /> */}
       <div className={styles.heroContainer}>
-        <h1 className={styles.heroTitle}>Leading the Way In Business Logistics</h1>
+        <h1 className={styles.heroTitle}>Marine Express Nigeria Limited.</h1>
+        <h2 className={styles.heroSubTitle}>Licensed Customs Agent.</h2>
         <p className={styles.heroBody}>
+          Leading the Way In Business Logistics.
           With more than 30 years experience. You can rely on us to get
           your business where it needs to be.
         </p>
