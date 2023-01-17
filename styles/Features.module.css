@@ -23,9 +23,6 @@
     padding: 3em 0;
 }
 
-.featureContainer:nth-child(even) {
-    background-color: rgba(0, 255, 255, 0.09);
-}
 
 .imageTextContainer {
     padding: 0;
@@ -95,18 +92,27 @@
         font-size: 1.2em;
     }
 
+    .featureContainer:nth-of-type(odd) .imageTextContainer {
+        flex-direction: row-reverse;
+    }
+    
+    .textContainer {
+        align-self: stretch;
+        margin: 3em 0 3em -5em;
+        padding: 1em 3em; 
+    }
+
+    .featureContainer:nth-of-type(odd) .textContainer {
+        margin: 3em -5em 3em 0;
+        z-index: 300;
+
+    }
+
     .image {
         width: 70%;
         height: 100%;
     }
 
-    .textContainer {
-        align-self: stretch;
-        margin: 3em 0 3em -5em;
-        padding: 1em 3em;
-
-
-    }
 
 
 }

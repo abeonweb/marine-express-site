@@ -6,8 +6,12 @@
 .image {
     width: 100%;
     height: 50vh;
-    object-position: center -50px;
+    object-position: center;
     object-fit: cover;
+}
+
+.listItem:nth-child(2) .image {
+    object-position: top;
 }
 
 .list {
