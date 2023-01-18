@@ -28,7 +28,7 @@
     top: 75px;
     bottom: 50%;
     right: 0;
-    left: 0%;
+    left: 0;
     z-index: 900;
     background: var(--color-primary);
     transform: translateY(-140%);
@@ -84,12 +84,12 @@
     background: transparent;
     padding: 0;
     position: relative;
-    right: 1em;
+    right: 0;
     z-index: 1000;
 }
 
 .navOpen .menuIcon {
-    right: 2em;
+    right: 0;
 }
 
 .hamburger {
@@ -97,16 +97,9 @@
     position: absolute;
     top: 50%;
     right: 0;
-}
-
-.hamburger::after,
-.hamburger::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
 
 }
+
 
 .hamburger,
 .hamburger::after,
@@ -116,6 +109,12 @@
     width: 2rem;
     border-radius: .5em;
     transition: transform 250ms ease-in-out;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: "";
+    position: absolute;
 }
 
 .sticky .hamburger,
@@ -146,9 +145,6 @@
     opacity: 1;
 }
 
-.navOpen .menuIcon {
-    position: fixed;
-}
 
 .navOpen .hamburger {
     transform: rotate(135deg)
