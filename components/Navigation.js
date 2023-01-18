@@ -29,7 +29,7 @@ export default function Navigation() {
             <div className={styles.navContent}>
                 <div className={styles.navLogo} >
                     {/* <img src="" className={styles.logoImage} alt="" /> */}
-                    <Link href="/"><h1 className={styles.navTitle}>MENL</h1></Link>
+                    <Link href="/" className={styles.navTitleLink}><h1 className={styles.navTitle}>MENL</h1></Link>
                 </div>
                 <div onClick={handleClick} className={styles.menuIcon}>
                     <span className={styles.hamburger}></span>
