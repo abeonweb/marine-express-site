@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const Services = (props) => {
   return (
-    <section className="top-section">
+    <section className={`top-section ${styles.serviceSection}`}>
       <h1 className="title">What is your next project?</h1>
       <ul className={styles.list}>
         {props.services.map(service => (
