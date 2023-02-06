@@ -1,6 +1,7 @@
 .article {
     width: 100%;
-    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .image {
@@ -23,6 +24,6 @@
     padding: 1em 0;
 }
 
-.subtitle {
-    font-size: 1.5em;
+.serviceTitle{
+    font-size: 2em;
 }
