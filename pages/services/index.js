@@ -13,7 +13,7 @@ const Services = (props) => {
             <Link className={styles.link} href={`/services/${service.title}`}>
               <article className={styles.article}>
                 <img className={styles.image} src={service.image} alt="" />
-                <h3 className={styles.subtitle}>{service.title}</h3>
+                <h3 className={styles.serviceTitle}>{service.title}</h3>
               </article>
             </Link>
           </li>
