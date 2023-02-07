@@ -8,7 +8,7 @@ const Contact = ({ days }) => {
   return (
     <div className={styles.contact}>
       <h1 className="title">Contact</h1>
-      <p className={styles.text}>Logistics done right can cause business growth qnd increase profits. We can help.</p>
+      <p className={styles.text}>Logistics done right grows business and increases profits. We can help.</p>
       <section className={`top-section ${styles.contact}`}>
         <div className={styles.workHoursContainer}>
           <div className={styles.imageContainer}>
