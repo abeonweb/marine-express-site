@@ -10,12 +10,12 @@ const Services = (props) => {
       <ul className={styles.list}>
         {props.services.map(service => (
           <li className={styles.listItem} key={service.id}>
-            <Link className={styles.link} href={`/services/${service.title}`}>
-              <article className={styles.article}>
+            <article className={styles.article}>
+              <Link className={styles.link} href={`/services/${service.title}`}>
                 <img className={styles.image} src={service.image} alt="" />
                 <h3 className={styles.serviceTitle}>{service.title}</h3>
-              </article>
-            </Link>
+              </Link>
+            </article>
           </li>
         ))}
       </ul>
