@@ -172,7 +172,7 @@
 .footer {
     background-color: var(--color-highlight-2);
     background: rgb(12, 101, 173);
-    background: linear-gradient(176deg, rgb(9, 77, 132) 2%, rgba(4, 116, 116, 1) 76%, rgba(3, 67, 119, 1) 100%);
+    background: linear-gradient(110deg, rgb(35, 132, 228) 22%, rgb(38, 166, 192) 44%, rgb(60, 96, 202) 90%);
     min-height: 30vh;
     color: var(--color-secondary);
     font-size: 1.3em;
