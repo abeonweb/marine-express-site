@@ -43,7 +43,7 @@
     background: linear-gradient(110deg, rgb(35, 132, 228) 22%, rgb(38, 166, 192) 44%, rgb(60, 96, 202) 90%);
     color: var(--color-secondary);
     width: 90%;
-    margin: -3em auto 0;
+    margin: -2em auto 0;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
     padding: 1em 2em;
     display: flex;
@@ -98,12 +98,12 @@
     
     .textContainer {
         align-self: stretch;
-        margin: 3em 0 3em -5em;
+        margin: 3em 0 3em -3em;
         padding: 1em 3em; 
     }
 
     .featureContainer:nth-of-type(odd) .textContainer {
-        margin: 3em -5em 3em 0;
+        margin: 3em -3em 3em 0;
         z-index: 300;
 
     }
