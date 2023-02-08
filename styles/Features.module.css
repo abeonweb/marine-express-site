@@ -40,7 +40,7 @@
 .textContainer {
     font-size: 1.1em;
     background-color: var(--color-primary);
-    background: linear-gradient(110deg, rgba(2, 66, 131, 1) 2%, rgb(13, 74, 86) 64%, rgba(2, 35, 131, 1) 100%);
+    background: linear-gradient(110deg, rgb(35, 132, 228) 22%, rgb(38, 166, 192) 44%, rgb(60, 96, 202) 90%);
     color: var(--color-secondary);
     width: 90%;
     margin: -3em auto 0;
