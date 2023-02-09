@@ -1,13 +1,13 @@
 const features = [
     
     {
-        title: "Ship and Air Freight Solutions",
+        title: "Ship and Air Freight",
         image: "../images/cargo-plane.webp",
         alt: "",
         text: "We offer solutions for both shipping and air frieght. Take your pick. We have you covered.",
     },
     {
-        title: "Complete Transportation Offerings",
+        title: "Transport Solutions",
         image: "../images/delivery.webp",
         alt: "",
         text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that transport all across Nigeria",
