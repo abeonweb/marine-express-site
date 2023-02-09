@@ -24,7 +24,9 @@
 }
 
 .serviceText{
-    font-size: 1.6em;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
     color: var(--color-primary);
     padding: 0.5em 2em;
     margin: 0 auto;

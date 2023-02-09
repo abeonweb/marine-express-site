@@ -60,10 +60,12 @@
 }
 
 .text {
-    font-size: 1.5rem;
-    color: var(--color-dark);
+    font-size: 1.75rem;
+    color: var(--color-primary);
     padding: 2em 3em 2em;
     text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
 .text:last-of-type {
