@@ -7,6 +7,8 @@ const Services = (props) => {
   return (
     <section className={`top-section ${styles.serviceSection}`}>
       <h1 className="title">What is your next project?</h1>
+      <p className={styles.serviceText}>There are a lot of reasons to choose us for your logistics need. We pride ourselves on our reliability.</p>
+      <p className={styles.serviceText}>At Marine Express, we have years of experience delivering quality to our clients. You can be rest assured of our commitment.</p>
       <ul className={styles.list}>
         {props.services.map(service => (
           <li className={styles.listItem} key={service.id}>
@@ -19,6 +21,7 @@ const Services = (props) => {
           </li>
         ))}
       </ul>
+      <p className={styles.serviceText}>For an in depth consultation or information, <Link href={"/contact"} className={styles.contactLink}>contact us</Link> now.</p>
     </section>
   )
 }
