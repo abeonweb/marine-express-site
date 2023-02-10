@@ -62,14 +62,14 @@
 .text {
     font-size: 1.75rem;
     color: var(--color-primary);
-    padding: 2em 3em 2em;
-    text-align: center;
-    letter-spacing: 1px;
+    padding: 1em 1.2em;
+    text-align: left;
+    letter-spacing: 1.5px;
     line-height: 1.6;
 }
 
 .text:last-of-type {
-    padding: 0 3em 2em;
+    padding-top: 0;
 }
 
 .captionText {
