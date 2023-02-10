@@ -8,17 +8,20 @@
 }
 
 .serviceContainer {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     gap: 2em;
-    justify-items: center;
 }
 
 .article {
     color: var(--color-secondary);
     background-color: rgb(12, 4, 104);
-    margin: 3em 1em 0;
-    max-width: 300px;
+    margin: 3em 0 0;
+    width: 100%;
+    max-width: 350px;
     height: 500px;
     overflow: hidden;
     position: relative;
@@ -28,7 +31,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: -250px 0;
+    object-position: -240px 0;
     transform: scale(1);
     transition: transform 500ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
@@ -36,6 +39,7 @@
 .textContainer {
     background-color: rgba(4, 4, 115, 0.6);
     height: 40%;
+    width: 100%;
     position: absolute;
     bottom: 0;
     padding: 2em 1.5em 3em;
@@ -80,8 +84,7 @@
     }
 
     .serviceContainer {
-        display: flex;
-        /* grid-template-columns: 1fr 1fr 1fr; */
+        flex-direction: row;
 
     }
 }
