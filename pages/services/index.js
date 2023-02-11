@@ -13,6 +13,7 @@ const Services = (props) => {
         {props.services.map(service => (
           <li className={styles.listItem} key={service.id}>
             <article className={styles.article}>
+              <div className={styles.overlay} />
               <Link className={styles.link} href={`/services/${service.title}`}>
                 <img className={styles.image} src={service.image} alt="" />
                 <h3 className={styles.serviceTitle}>{service.title}</h3>
