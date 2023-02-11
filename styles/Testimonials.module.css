@@ -1,8 +1,6 @@
 /* =============== SOCIAL PROOF =============== */
 .testimonials {
   font-style: italic;
-  letter-spacing: 1px;
-  font-weight: 700;
   margin: 4em 0 5em;
   padding: 4em 0;
   color: var(--color-secondary);
@@ -59,13 +57,16 @@
 }
 
 .quote {
-  line-height: 1.6;
-  font-size: 0.9em;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  font-size: 0.8em;
+  
 }
 
 .info {
+  font-size: 0.7em;
   order: 3;
-  margin: 1.5em 0 0 3em;
+  margin: 0.5em 0 0 3em;
   align-self: center;
 }
 
