@@ -28,13 +28,15 @@ export default function Navigation() {
         <header id="header" className={`${styles.header} ${open ? styles.navOpen : null}`} >
             <div className={styles.navContent}>
                 <div className={styles.navLogo} >
-                    <Link href="/" className={styles.navTitleLink}>
-                        <img src="./images/menl.png" className={styles.logoImage} alt="" />
-                        <h1 className={styles.navTitle}>
-                            <span className={styles.logoName}>Marine </span>
-                            <span className={styles.logoName}>Express</span>
-                        </h1>
-                    </Link>
+                    <div>
+                        <Link href="/" className={styles.navTitleLink}>
+                            <img src="./images/menl.png" className={styles.logoImage} alt="" />
+                            <h1 className={styles.navTitle}>
+                                <span className={styles.logoName}>Marine </span>
+                                <span className={styles.logoName}>Express</span>
+                            </h1>
+                        </Link>
+                    </div>
                 </div>
                 <div onClick={handleClick} className={styles.menuIcon}>
                     <span className={styles.hamburger}></span>
@@ -43,10 +45,14 @@ export default function Navigation() {
                     <ul className={styles.navList}>
                         {
                             links.map(({ name, path }, i) => <li
-                                key={i}><Link
+                                key={i}
+                                className={styles.navListItem}
+                            >
+                                    <Link
                                     href={path}
                                     className={styles.navLink}
-                                    onClick={handleClick}>{name}</Link></li>)
+                                    onClick={handleClick}>{name}</Link>
+                                    </li>)
                         }
                     </ul>
 
