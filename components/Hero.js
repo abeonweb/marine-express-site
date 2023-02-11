@@ -10,7 +10,7 @@ function Hero() {
       </video>
       {/* <img alt="poster image mobile" className={styles.poster} src="../images/ships.webp" /> */}
       <div className={styles.heroContainer}>
-        <h1 className={styles.heroTitle}>Marine Express Nigeria Limited.</h1>
+        <h1 className={styles.heroTitle}>Marine Express Logistics</h1>
         <h2 className={styles.heroSubTitle}>Licensed Customs Agent.</h2>
         <p className={styles.heroBody}>
           Leading the Way In Business Logistics.
