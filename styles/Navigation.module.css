@@ -10,6 +10,7 @@
 
 .navContent {
     width: 95%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +18,9 @@
 
 .navTitle {
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     font-weight: 900;
     color: var(--color-primary);
     user-select: none;
@@ -36,11 +40,25 @@
     transition: opacity 500ms ease;
 }
 
+
 .navLogo {
-    width: 30px;
-    height: 30px;
-    margin-left: 1em;
+    width: 35px;
     padding: 0;
+}
+
+.navTitleLink {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logoImage{
+    width: 100%;
+    margin-right: 1em;
+}
+
+.logoName{
+    display: block;
 }
 
 .sticky .header {
@@ -76,6 +94,7 @@
 /* .active {
     color: var(--clr-highlight);
   } */
+
 
 .menuIcon {
     width: 2rem;
@@ -258,10 +277,6 @@
         right: 0;
         left: 0;
         opacity: 1;
-    }
-
-    .navLogo {
-        margin-left: 3em;
     }
 
     .navList {
