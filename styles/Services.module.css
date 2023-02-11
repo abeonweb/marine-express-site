@@ -1,4 +1,4 @@
-.serviceSection{
+.serviceSection {
     min-height: 110vh;
 }
 
@@ -23,15 +23,15 @@
     align-items: center;
 }
 
-.serviceText{
+.serviceText {
     font-size: 1.75rem;
     letter-spacing: 1px;
     line-height: 1.6;
     color: var(--color-primary);
     padding: 0.5em 2em;
     margin: 0 auto;
-    text-align: center;
-    margin-bottom: 2em;
+    text-align: left;
+    margin: 0 0.5em;
 }
 
 .contactLink {
@@ -53,19 +53,37 @@
 }
 
 
-.serviceTitle{
+.serviceTitle {
     position: relative;
     font-size: 3em;
     color: var(--color-secondary);
     z-index: 100;
     text-align: center;
+    margin-bottom: 0.5em;
 }
 
-.serviceSubText{
+.serviceSubText {
     color: var(--color-secondary);
-    font-size: 1.3em;
+    font-size: 1.1em;
     position: relative;
     z-index: 100;
     text-align: center;
     padding: 0 4em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    background-color: rgba(15, 15, 15, 0.5);
+
+}
+
+@media (min-width: 640px) {
+    .serviceText {
+        margin: 0 4em;
+    }
 }
