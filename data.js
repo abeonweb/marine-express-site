@@ -2,7 +2,7 @@ const features = [
     
     {
         title: "Ship and Air Freight",
-        image: "../images/cargo-plane.webp",
+        image: "../images/container-ship.webp",
         alt: "",
         text: "We offer solutions for both shipping and air frieght. Take your pick. We have you covered.",
     },
@@ -13,16 +13,16 @@ const features = [
         text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that transport all across Nigeria",
     },
     {
+        title: "Detailed information",
+        image: "../images/information.webp",
+        alt: "",
+        text: "Do you want updates on your shipment? Our goal is to keep you connected. Get detailed reports whenever you want it",
+    },
+    {
         title: "Warehousing Solutions",
         image: "../images/warehouse.webp",
         alt: "",
         text: "We take care of that too. Warehouse facilities available when needed so as to keep your shipment secure.",
-    },
-    {
-        title: "Detailed information",
-        image: "../images/ships.webp",
-        alt: "",
-        text: "Do you want updates on your shipment? Our goal is to keep you connected. Get detailed reports whenever you want it",
     },
     {
     title: "Quality Assurance",
@@ -52,6 +52,7 @@ const services =[
         id: "clearing",
         title: "Clearing",
         image: "../images/wharf.webp",
+        icon: "../images/ship.png",
         text: "Specialised services we provide as a customs agent to our clients",
         list: [
             "Provision of a suitable environment conducive to clear your cargo in order to avoid payment of demurrage",
@@ -71,7 +72,8 @@ const services =[
         id: "forwarding",
         title: "Forwarding",
         image: "../images/cargo-plane.webp",
-        text: "Our services as forwarders is complete. Full logistic support",
+        icon: "../images/airplane.png",
+        text: "Our services as forwarders is complete. We ensure full logistic support.",
         list: [
             "Liase effectively with the exporters on how to register with the Nigerian Export Promotion Council",
             "Process of export Bill of Entry with customs",
@@ -88,7 +90,8 @@ const services =[
         id: "haulage",
         title: "Haulage",
         image: "../images/trucks.webp",
-        text: "Point to point delivery of goods",
+        icon: "../images/truck.png",
+        text: "Point to point delivery of goods. Guaranteed to serve your needs.",
         list: [
             "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
             "Provision of adequate warehousing if required",
