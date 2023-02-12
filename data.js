@@ -3,31 +3,31 @@ const features = [
     {
         title: "Ship and Air Freight",
         image: "../images/container-ship.webp",
-        alt: "",
-        text: "We offer solutions for both shipping and air frieght. Take your pick. We have you covered.",
+        alt: "cargo ship on the sea",
+        text: "We offer solutions for both sea and air freight.",
     },
     {
         title: "Transport Solutions",
         image: "../images/delivery.webp",
-        alt: "",
+        alt: "Deliver man handling boxes",
         text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that transport all across Nigeria",
     },
     {
         title: "Detailed information",
         image: "../images/information.webp",
-        alt: "",
+        alt: "A couple at a computer",
         text: "Do you want updates on your shipment? Our goal is to keep you connected. Get detailed reports whenever you want it",
     },
     {
         title: "Warehousing Solutions",
         image: "../images/warehouse.webp",
-        alt: "",
+        alt: "warehouse full of merchandise",
         text: "We take care of that too. Warehouse facilities available when needed so as to keep your shipment secure.",
     },
     {
     title: "Quality Assurance",
     image: "../images/quality.webp",
-    alt: "",
+    alt: "A man sign checking documents",
         text: "Quality is our number one priority. We ensure that your property is safe from start of journey to destination",
     },
 ]
