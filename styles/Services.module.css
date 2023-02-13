@@ -2,6 +2,27 @@
     min-height: 110vh;
 }
 
+.titleContainer {
+    height: 30rem;
+    background-color: rgba(15, 15, 15, 0.5);
+    background-image: url(../public/images/containers.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    margin-bottom: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageTitle {
+    color: var(--color-secondary);
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
 .list {
     padding: 3em 0.5em;
     list-style: none;
@@ -24,14 +45,19 @@
 }
 
 .serviceText {
-    font-size: 1.75rem;
-    letter-spacing: 1px;
-    line-height: 1.6;
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+    line-height: 1.8;
     color: var(--color-primary);
     padding: 0.5em 2em;
     margin: 0 auto;
     text-align: left;
     margin: 0 0.5em;
+}
+
+.serviceText:last-of-type {
+    margin: 3em 0;
+    text-align: center;
 }
 
 .contactLink {
@@ -85,5 +111,9 @@
 @media (min-width: 640px) {
     .serviceText {
         margin: 0 4em;
+    }
+
+    .pageTitle {
+        font-size: 3.5em;
     }
 }
