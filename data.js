@@ -41,7 +41,7 @@ const about = [
     {
         title: "Mission Statement",
         image:"../images/marine-express-truck.webp",
-        text: [`MENL sets the pace in the clearing and forwarding agency sector by making general importation and exportation an easy and comfortable venture. 
+        text: [`Marine Express sets the pace in the clearing and forwarding agency sector by making general importation and exportation an easy and comfortable venture. 
         We not only ensure a safe and timely delivery of merchandise, we get your business where it needs to be in terms of our service delivery.
         We secure cost effectiveness for you and your business without compromising quality of service. Bringing you the needed rest of mind.`],
     },
@@ -99,6 +99,19 @@ const services =[
         ]
 
     },
+    {
+        id: "ro-ro",
+        title: "Ro-Ro",
+        image: "../images/ro-ro.png",
+        icon: "../images/suv-car.png",
+        text: "Want to ship your vehicle? We handle vehicle processing to destination.",
+        list: [
+            "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
+            "Provision of adequate warehousing if required",
+            "Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
+        ]
+
+    },
 ]
 
 const links = [
@@ -123,7 +136,7 @@ const links = [
 const testimonials = [
     {
         image: "",
-        text: `From a business standpoint, it was excellent woking with them. The previous company didn't do a good job and we had to pay extra fees on our consignment. With MENL no such issues occured. They were very on point with their service delivery. I will surely work with then again.`,
+        text: `From a business standpoint, it was excellent woking with them. The previous company didn't do a good job and we had to pay extra fees on our consignment. With Marine Express no such issues occured. They were very on point with their service delivery. I will surely work with then again.`,
         info: "Haruna A."
     },
     {
