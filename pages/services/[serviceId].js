@@ -11,7 +11,7 @@ const ServiceDetails = ({ services }) => {
 
     return (
         <article className={styles.article}>
-            <h1 className={styles.serviceTitle}>{service.title}</h1>
+            <h1 className={`title ${styles.serviceTitle}`}>{service.title}</h1>
             <img className={styles.image} src={service.image} alt="" />
             <ul className={styles.list}>
                 {service.list.map((item, i) => <li className={styles.listItem} key={i}>{item}</li>)}
