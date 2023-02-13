@@ -10,6 +10,11 @@ const Contact = ({ days }) => {
       <h1 className="title">Contact</h1>
       <p className={styles.text}>Logistics done right grows business and increases profits. We can help.</p>
       <section className={`top-section ${styles.contact}`}>
+        <div>
+          <p className={styles.text}>
+            Telephone: +234 803 301 7071
+          </p>
+        </div>
         <div className={styles.workHoursContainer}>
           <div className={styles.imageContainer}>
             <img src="../images/headset-man.png" alt="" className={styles.image} />
@@ -41,7 +46,7 @@ const Contact = ({ days }) => {
   )
 }
 
-export async function getStaticProps(){
+export async function getStaticProps() {
   return {
     props: {
       days
