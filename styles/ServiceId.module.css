@@ -10,11 +10,16 @@
     margin-bottom: 1em;
 }
 
-.image {
+.imageContainer {
     width: 100%;
     height: 70vh;
+    position: relative;
+}
+
+.image {
+    width: 100%;
     object-position: 50% 20%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .list {
@@ -41,13 +46,36 @@
     margin: 0 1.5em 3em;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageLink:last-of-type {
+    flex-direction: column-reverse;
 }
 
 .pageLinkImage{
     width: 24px;
-    margin: 0 0.5em;
+    height: auto;
+    margin: 0 0.75em 0.5em;
 }
 
 .pageLinkText {
     display: block;
+    font-size: 1.2em;
+}
+
+@media (min-width: 450px){
+    .pageLink {
+        flex-direction: row;
+    }
+    
+    .pageLink:last-of-type {
+        flex-direction: row;
+    }
+
+    .pageLinkImage{
+        margin-bottom: 0;
+    }
+    
 }
