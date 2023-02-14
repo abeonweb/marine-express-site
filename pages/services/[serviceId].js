@@ -19,7 +19,7 @@ const ServiceDetails = ({ services }) => {
                 <Image
                     priority
                     fill
-                    sizes="(min-width: 600px) 100vw, 50vw"
+                    sizes="(min-width: 390px) 33vw, 100vw"
                     className={styles.image}
                     src={service.image}
                     alt=""
