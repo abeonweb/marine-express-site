@@ -31,9 +31,15 @@
     flex-direction: column;
 }
 
+.imageContainer {
+    position: relative;
+    z-index: 100;
+}
+
 
 .image {
     width: 100%;
+    height: auto;
     max-width: 500px;
     object-fit: cover;
     position: relative;
@@ -113,10 +119,7 @@
 
     }
 
-    .imageContainer {
-        position: relative;
-        z-index: 100;
-    }
+   
 
     .imageContainer::before {
         content: "";
