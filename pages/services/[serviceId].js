@@ -3,6 +3,9 @@ import { services } from "../../data"
 import { useRouter } from "next/router"
 import styles from "../../styles/ServiceId.module.css"
 import Link from "next/link"
+import Image from "next/image"
+import backArrow from "../../public/images/backArrow.png"
+import contact from "../../public/images/contact.png"
 
 const ServiceDetails = ({ services }) => {
     const router = useRouter()
@@ -12,13 +15,22 @@ const ServiceDetails = ({ services }) => {
     return (
         <article className={styles.article}>
             <h1 className={`title ${styles.serviceTitle}`}>{service.title}</h1>
-            <img className={styles.image} src={service.image} alt="" />
+            <div className={styles.imageContainer}>
+                <Image
+                    priority
+                    fill
+                    sizes="(min-width: 600px) 100vw, 50vw"
+                    className={styles.image}
+                    src={service.image}
+                    alt=""
+                />
+            </div>
             <ul className={styles.list}>
                 {service.list.map((item, i) => <li className={styles.listItem} key={i}>{item}</li>)}
             </ul>
             <div className={styles.pageLinks}>
                 <Link className={styles.pageLink} href="/services">
-                    <img src={"../images/backArrow.png"} className={styles.pageLinkImage} alt="" />
+                    <Image width={24} src={backArrow} className={styles.pageLinkImage} alt="" />
                     <span className={styles.pageLinkText}>
                         Back to Services
                     </span>
@@ -27,7 +39,7 @@ const ServiceDetails = ({ services }) => {
                     <span className={styles.pageLinkText}>
                         Contact us
                     </span>
-                    <img src={"../images/contact.png"} className={styles.pageLinkImage} alt="" />
+                    <Image width={24} src={contact} className={styles.pageLinkImage} alt="" />
                 </Link>
             </div>
         </article>

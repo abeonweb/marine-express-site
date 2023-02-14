@@ -18,7 +18,7 @@ const Services = (props) => {
             <article className={styles.article}>
               <div className={styles.overlay} />
               <Link className={styles.link} href={`/services/${service.title}`}>
-                <img className={styles.image} src={service.image} alt="" />
+                <Image width={300} className={styles.image} src={service.image} alt="" />
                 <h3 className={styles.serviceTitle}>{service.title}</h3>
                 <p className={styles.serviceSubText}>{service.text}</p>
               </Link>

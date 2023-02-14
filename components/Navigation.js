@@ -3,6 +3,7 @@ import Link from "next/link"
 import useOpen from "../hooks/useOpen"
 import { links } from "../data"
 import styles from "../styles/Navigation.module.css"
+import Image from "next/image"
 
 export default function Navigation() {
     const { open, handleClick } = useOpen()
@@ -30,7 +31,7 @@ export default function Navigation() {
                 <div className={styles.navLogo} >
                     <div>
                         <Link href="/" className={styles.navTitleLink}>
-                            <img src="./images/menl.png" className={styles.logoImage} alt="" />
+                            <Image width={35} height={40} src="/images/menl.png" className={styles.logoImage} alt="" />
                             <h1 className={styles.navTitle}>
                                 <span className={styles.logoName}>Marine </span>
                                 <span className={styles.logoName}>Express</span>

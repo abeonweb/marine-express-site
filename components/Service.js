@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import React from 'react'
 import { services } from "../data"
@@ -12,12 +13,12 @@ const Service = () => {
                     services.map(({ title, text, image, icon }, i) => {
                         return (
                             <Link key={i} className={styles.link} href={`/services/${title}`}>
-                                <article className={styles.article}>
-                                    <img src={image} className={styles.image} alt="" />
+                                <article className={styles.serviceArticle}>
+                                    <Image width={300} height={500} src={image} className={styles.image} alt="" />
                                     <div
                                         className={styles.textContainer}
                                     >
-                                        <img className={styles.icon} src={icon} alt=""/>
+                                        <Image width={50} height={50} className={styles.icon} src={icon} alt=""/>
                                         <h2 className={styles.title}>{title}</h2>
                                         <p className={styles.text}>{text}</p>
                                     </div>

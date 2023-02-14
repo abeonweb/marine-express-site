@@ -3,6 +3,7 @@ import Form from "../../components/Form"
 import Banner from "../../components/Banner"
 import styles from "../../styles/Contact.module.css"
 import { days } from "../../data"
+import Image from "next/image"
 
 const Contact = ({ days }) => {
   return (
@@ -17,7 +18,7 @@ const Contact = ({ days }) => {
         </div>
         <div className={styles.workHoursContainer}>
           <div className={styles.imageContainer}>
-            <img src="../images/headset-man.png" alt="" className={styles.image} />
+            <Image width={800} height={400} priority src="/images/headset-man.png" alt="" className={styles.image} />
           </div>
           <div className={styles.workHours}>
             <div className={styles.workHoursTextContainer}>
@@ -34,7 +35,7 @@ const Contact = ({ days }) => {
         <div className={styles.contactFormContainer}>
           <h3 className={styles.subtitle}>Send us a message</h3>
           <div className={styles.imageContainer}>
-            <img src="../images/woman-phone.webp" alt="" className={styles.image} />
+            <Image width={1000} height={400} src="/images/woman-phone.webp" alt="" className={styles.image} />
             <div className={styles.formContainer}>
               <p className={styles.text}>Have questions before you make a decision? We are happy to help.</p>
               <Form />
