@@ -2,31 +2,31 @@ const features = [
     
     {
         title: "Ship and Air Freight",
-        image: "../images/container-ship.webp",
+        image: "/images/container-ship.webp",
         alt: "cargo ship on the sea",
         text: "We offer solutions for both sea and air freight.",
     },
     {
         title: "Transport Solutions",
-        image: "../images/delivery.webp",
+        image: "/images/delivery.webp",
         alt: "Deliver man handling boxes",
         text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that transport all across Nigeria",
     },
     {
         title: "Detailed information",
-        image: "../images/information.webp",
+        image: "/images/information.webp",
         alt: "A couple at a computer",
         text: "Do you want updates on your shipment? Our goal is to keep you connected. Get detailed reports whenever you want it",
     },
     {
         title: "Warehousing Solutions",
-        image: "../images/warehouse.webp",
+        image: "/images/warehouse.webp",
         alt: "warehouse full of merchandise",
         text: "We take care of that too. Warehouse facilities available when needed so as to keep your shipment secure.",
     },
     {
     title: "Quality Assurance",
-    image: "../images/quality.webp",
+    image: "/images/quality.webp",
     alt: "A man sign checking documents",
         text: "Quality is our number one priority. We ensure that your property is safe from start of journey to destination",
     },
@@ -35,12 +35,12 @@ const features = [
 const about = [
     {
         title: "Introduction",
-        image:"../images/wharf.webp",
+        image:"/images/wharf.webp",
         text: ["Marine Express Nigera Limited (MENL), incorporated on the 4th of May 1988 with RC number 112669 fully commenced business in Nigeria in June 1988 at 4 Ogunlana Drive, Surulere hitherto its registered office address."],
     },
     {
         title: "Mission Statement",
-        image:"../images/marine-express-truck.webp",
+        image:"/images/marine-express-truck.webp",
         text: [`Marine Express sets the pace in the clearing and forwarding agency sector by making general importation and exportation an easy and comfortable venture. 
         We not only ensure a safe and timely delivery of merchandise, we get your business where it needs to be in terms of our service delivery.
         We secure cost effectiveness for you and your business without compromising quality of service. Bringing you the needed rest of mind.`],
@@ -51,8 +51,8 @@ const services =[
     {
         id: "clearing",
         title: "Clearing",
-        image: "../images/wharf.webp",
-        icon: "../images/ship.png",
+        image: "/images/wharf.webp",
+        icon: "/images/ship.png",
         text: "Specialised services we provide as a customs agent to our clients",
         list: [
             "Provision of a suitable environment conducive to clear your cargo in order to avoid payment of demurrage",
@@ -71,8 +71,8 @@ const services =[
     {
         id: "forwarding",
         title: "Forwarding",
-        image: "../images/cargo-plane.webp",
-        icon: "../images/airplane.png",
+        image: "/images/cargo-plane.webp",
+        icon: "/images/airplane.png",
         text: "Our services as forwarders is complete. We ensure full logistic support.",
         list: [
             "Liase effectively with the exporters on how to register with the Nigerian Export Promotion Council",
@@ -89,8 +89,8 @@ const services =[
     {
         id: "haulage",
         title: "Haulage",
-        image: "../images/trucks.webp",
-        icon: "../images/truck.png",
+        image: "/images/trucks.webp",
+        icon: "/images/truck.png",
         text: "Point to point delivery of goods. Guaranteed to serve your needs.",
         list: [
             "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
@@ -102,8 +102,8 @@ const services =[
     {
         id: "ro-ro",
         title: "Ro-Ro",
-        image: "../images/ro-ro.png",
-        icon: "../images/suv-car.png",
+        image: "/images/ro-ro.webp",
+        icon: "/images/suv-car.png",
         text: "Want to ship your vehicle? We handle vehicle processing to destination.",
         list: [
             "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
