@@ -33,7 +33,8 @@
 }
 
 .workHoursContainer .image {
-    object-position: 5em;
+    object-position: -5em;
+    height: auto;
 }
 
 .subtitle {
@@ -73,7 +74,7 @@
     text-transform: capitalize;
 }
 
-.image {
+.contact .image {
     width: 100%;
     margin: 0 0 -0.40em 0;
     padding: 0;
@@ -166,6 +167,12 @@
     }
 }
 
+@media (min-width: 550px) {
+    .workHoursContainer .image {
+        object-position: 5em;
+    }
+    
+}
 @media (min-width: 700px) {
 
     .workHours {
@@ -174,9 +181,15 @@
         left: 10%;
     }
 
+    .workHoursContainer .image {
+        object-position: -3em;
+    }
+
     .contactFormContainer .image {
         object-position: 0 -80px;
     }
+
+    
 }
 
 @media (min-width: 800px) {
@@ -197,7 +210,7 @@
     }
 
     .workHoursTextContainer {
-        margin-right: -6em;
+        margin-right: 6em;
     }
 
 }
