@@ -12,18 +12,24 @@ const Service = () => {
                 {
                     services.map(({ title, text, image, icon }, i) => {
                         return (
-                            <Link key={i} className={styles.link} href={`/services/${title}`}>
-                                <article className={styles.serviceArticle}>
-                                    <Image width={300} height={500} src={image} className={styles.image} alt="" />
+                            <article key={i} className={styles.serviceArticle}>
+                                <Link  className={styles.link} href={`/services/${title}`}>
+                                    <Image
+                                        width={600}
+                                        height={500}
+                                        src={image}
+                                        className={styles.image}
+                                        alt=""
+                                    />
                                     <div
                                         className={styles.textContainer}
                                     >
-                                        <Image width={50} height={50} className={styles.icon} src={icon} alt=""/>
+                                        <Image width={50} height={50} className={styles.icon} src={icon} alt="" />
                                         <h2 className={styles.title}>{title}</h2>
                                         <p className={styles.text}>{text}</p>
                                     </div>
-                                </article>
-                            </Link>
+                                </Link>
+                            </article>
                         )
                     })
                 }
