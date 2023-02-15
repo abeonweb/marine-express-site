@@ -31,7 +31,7 @@ export default function Navigation() {
                 <div className={styles.navLogo} >
                     <div>
                         <Link href="/" className={styles.navTitleLink}>
-                            <Image width={35} height={40} src="/images/menl.png" className={styles.logoImage} alt="" />
+                            <Image width={35} height={40} priority src="/images/menl.png" className={styles.logoImage} alt="" />
                             <h1 className={styles.navTitle}>
                                 <span className={styles.logoName}>Marine </span>
                                 <span className={styles.logoName}>Express</span>
