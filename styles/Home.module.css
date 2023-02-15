@@ -1,14 +1,12 @@
 .hero {
   height: 60vh;
   position: relative;
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
 .heroVideo {
   height: 100%;
   object-fit: cover;
   object-position: 50% center;
-  /* position: relative; */
 }
 
 .poster {
@@ -46,12 +44,13 @@
 .heroBody,
 .heroSubTitle {
   font-family: 'Manrope', sans-serif;
-  width: 80%;
+  width: 85%;
   max-width: 600px;
   font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 1.4;
-
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+  
 }
 
 .heroTitle {
@@ -77,8 +76,20 @@
   margin: 2em 0;
   padding: 1.2em 1.5em;
   font-size: 1.6rem;
+  font-weight: 700;
   letter-spacing: 2px;
   border-radius: .5em;
+}
+
+.ctaBtn:hover {
+  color: var(--color-highlight-2);
+  background-color: var(--color-highlight-3);
+  border: none;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.highlight {
+  color: var(--color-highlight-3);
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
