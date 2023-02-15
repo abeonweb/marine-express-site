@@ -36,7 +36,7 @@
 
 
 .textContainer {
-    background-color: rgba(4, 4, 115, 0.75);
+    background-color: rgba(4, 4, 115, 0.5);
     width: 100%;
     height: 130%;
     position: absolute;
@@ -55,7 +55,7 @@
 } */
 
 .textContainer:hover {
-    transform: translateY(-80px);
+    transform: translateY(-40px);
 }
 
 .icon {
