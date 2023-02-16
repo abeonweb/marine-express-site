@@ -62,11 +62,9 @@
 }
 
 .title {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 1);
     padding: 1.5em 0;
     font-size: 1.4em;
-    line-height: 1.4;
-    letter-spacing: 1px;
 }
 
 .text {
@@ -75,7 +73,6 @@
     padding: 1em 1.2em;
     text-align: left;
     letter-spacing: 1.5px;
-    line-height: 1.6;
 }
 
 .text:last-of-type {
