@@ -10,7 +10,7 @@ import contact from "../../public/images/contact.png"
 const ServiceDetails = ({ services }) => {
     const router = useRouter()
     const serviceId = router.query.serviceId
-    const service = services.find(service => service.title == serviceId)
+    const service = services.find(service => service.id == serviceId)
 
     return (
         <article className={styles.article}>
@@ -49,10 +49,9 @@ const ServiceDetails = ({ services }) => {
 export async function getStaticPaths() {
     return {
         paths: [
-            { params: { serviceId: 'Clearing' } },
-            { params: { serviceId: 'Forwarding' } },
-            { params: { serviceId: 'Haulage' } },
-            { params: { serviceId: 'Ro-Ro' } },
+            { params: { serviceId: 'maritime' } },
+            { params: { serviceId: 'air' } },
+            { params: { serviceId: 'other' } },
         ],
         fallback: false,
     }

@@ -10,10 +10,10 @@ const Service = () => {
             <h2 className="title">Clearing & Forwarding Services</h2>
             <div className={styles.serviceContainer}>
                 {
-                    services.map(({ title, text, image, icon }, i) => {
+                    services.map(({ title, text, image, icon, id }, i) => {
                         return (
                             <article key={i} className={styles.serviceArticle}>
-                                <Link  className={styles.link} href={`/services/${title}`}>
+                                <Link  className={styles.link} href={`/services/${id}`}>
                                     <Image
                                         width={600}
                                         height={500}
