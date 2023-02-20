@@ -7,7 +7,7 @@ import styles from "../styles/Service.module.css"
 const Service = () => {
     return (
         <section className={styles.services}>
-            <h2 className="title">Our Services</h2>
+            <h2 className="title">Clearing & Forwarding Services</h2>
             <div className={styles.serviceContainer}>
                 {
                     services.map(({ title, text, image, icon }, i) => {
