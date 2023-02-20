@@ -49,69 +49,60 @@ const about = [
 
 const services =[
     {
-        id: "clearing",
-        title: "Clearing",
+        id: "maritime",
+        title: "Maritime Clearance",
         image: "/images/wharf.webp",
         icon: "/images/ship.png",
         text: "Specialised services we provide as a customs agent to our clients",
         list: [
-            "Provision of a suitable environment conducive to clear your cargo in order to avoid payment of demurrage",
-            "Adequate information about ship movement with their cargo. That is name of ship agents, arrival and berthing dates of the ship, and the port of discharge",
-            "submission and completion of all necessary shipping / NPA documentation",
-            "Processing of all customs documents to the final relaeasing stage",
-            "Supervision of discharging and loading operations",
-            "Supervision and sighting of goods discharged from the carrying vessel to arrange for private  protection so as to prevent pilfering",
-            "Delivery of consignment to the importers premises or warehouse", ,
-            "Providing information about duty payments through any of the designated banks to the importers, in order to avoid unnecessary delays",
-            "Submission of all relevant document to the importe for remittance purposes throught he bank  after the goods have been cleared",
-            "Informing the importer where necessary, through ddetailed report of the consignment condition as at the time of discharge",
+            "Open cargo / groupage containers",
+            "Containerized cargo",
+            "Roll on Roll off automobile clearance",
+            "New project cargo clearance",
+            "Bulk cargo clearance: Monitoring of such vessels from point of departure to any Nigerian port",
         ]
 
     },
     {
-        id: "forwarding",
-        title: "Forwarding",
+        id: "air",
+        title: "Air Freight Clearance",
         image: "/images/cargo-plane.webp",
         icon: "/images/airplane.png",
-        text: "Our services as forwarders is complete. We ensure full logistic support.",
+        text: "Faster than than sea freight which can take several weeks.",
         list: [
-            "Liase effectively with the exporters on how to register with the Nigerian Export Promotion Council",
-            "Process of export Bill of Entry with customs",
-            "Booking of space with the shipping company up to final destination",
-            "Securing of competitive freight rates",
-            "Provision of adequate warehousing if required",
-            "Processing of export documents with the relevant port operators i.e Nigeria Ports Authority,  National Maritime Authority, Shipping Companies",
-            " Securing all export clearances form the approriate Govenment agencies such as the National Drug Law Enforcement Agency, State Security Services, Ministry of Agriculture etc",
-            " Collection of Bill of Lading and other vital documents from shipping companies for immediate deleivery to the exporter",
+            "Air freight is the faster way to import goods into Nigeria",
+            "We work with all airlines carrying cargo by air into any designated cargo shed in Nigeria",
+            "Arrival and departure times are very reliable",
+            "Cargo can be sent almost anywhere"
         ]
 
     },
     {
-        id: "haulage",
-        title: "Haulage",
+        id: "other",
+        title: "Other Activities",
         image: "/images/trucks.webp",
         icon: "/images/truck.png",
         text: "Point to point delivery of goods. Guaranteed to serve your needs.",
         list: [
-            "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
-            "Provision of adequate warehousing if required",
-            "Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
+            "Provision of warehouse services to our clients.",
+            "Cargo survey and superintendence",
+            "Specialized haulage services for whenever the need arises",
         ]
 
     },
-    {
-        id: "ro-ro",
-        title: "Ro-Ro",
-        image: "/images/ro-ro.webp",
-        icon: "/images/suv-car.png",
-        text: "Want to ship your vehicle? We handle vehicle processing to destination.",
-        list: [
-            "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
-            "Provision of adequate warehousing if required",
-            "Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
-        ]
+    // {
+    //     id: "ro-ro",
+    //     title: "Ro-Ro",
+    //     image: "/images/ro-ro.webp",
+    //     icon: "/images/suv-car.png",
+    //     text: "Want to ship your vehicle? We handle vehicle processing to destination.",
+    //     list: [
+    //         "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
+    //         "Provision of adequate warehousing if required",
+    //         "Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
+    //     ]
 
-    },
+    // },
 ]
 
 const links = [
