@@ -144,6 +144,10 @@ const footerLinks = [
         name: "Privacy Policy",
         path: "/privacy"
     },
+    {
+        name: "Terms & Conditions",
+        path: "/privacy"
+    },
 ]
 
 const testimonials = [
