@@ -123,6 +123,28 @@ const links = [
         path: "/contact"
     },
 ]
+const footerLinks = [
+    {
+        name: "Home",
+        path: "/"
+    },
+    {
+        name: "Services",
+        path: "/services"
+    },
+    {
+        name: "Our Business",
+        path: "/about"
+    },
+    {
+        name: "Contact us",
+        path: "/contact"
+    },
+    {
+        name: "Privacy Policy",
+        path: "/privacy"
+    },
+]
 
 const testimonials = [
     {
@@ -153,4 +175,4 @@ const testimonials = [
 
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday"]
 
-export { features, links, testimonials, about, services, days }
+export { features, links, footerLinks, testimonials, about, services, days }
