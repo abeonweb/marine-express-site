@@ -98,6 +98,33 @@ a {
   color: var(--color-highlight)
 }
 
+
+/* =============== POLICY =============== */
+.policy-main {
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.policy-main h1,
+.policy-main h2,
+.policy-main h3 {
+  padding-top: 2em;
+}
+
+.policy-main p {
+  padding-top: 1em;
+}
+
+.policy-main p:first-of-type {
+  padding-top: 2em;
+}
+
+.policy-main ul {
+  padding-left: 2em;
+}
+
+
 @media (min-width: 600px) {
   .top-section {
     max-width: 1200px;
