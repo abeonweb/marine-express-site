@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../styles/Navigation.module.css"
-import { links } from "../data"
+import { footerLinks as links } from "../data"
 import Link from "next/link"
 import Image from "next/image"
 
