@@ -94,4 +94,14 @@ const privacy = () => {
     )
 }
 
+
+
+export async function getStaticProps() {
+    return {
+        props: {
+
+        }
+    }
+}
+
 export default privacy
