@@ -146,7 +146,7 @@ const footerLinks = [
     },
     {
         name: "Terms & Conditions",
-        path: "/privacy"
+        path: "/terms"
     },
 ]
 
