@@ -114,15 +114,16 @@ const links = [
         name: "Services",
         path: "/services"
     },
-    {
-        name: "Our Business",
-        path: "/about"
-    },
+    // {
+    //     name: "Our Business",
+    //     path: "/about"
+    // },
     {
         name: "Contact us",
         path: "/contact"
     },
 ]
+
 const footerLinks = [
     {
         name: "Home",
