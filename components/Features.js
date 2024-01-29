@@ -7,10 +7,10 @@ const Features = () => {
   return (
     <div className="top-section">
       <h2 className="title">Why depend on us</h2>
-      <p className={styles.text}>Todays world is fast moving, technology driven, global. You need a partner you can rely on. Getting the most out of your network is possible when you have the best team working for you.</p>
-      <p className={styles.text}>At Marine Express you have that team. Dedicated service that will get the work done.</p>
+      <p className={styles.featuresText}>Todays world is fast moving, technology driven, global. You need a partner you can rely on. Getting the most out of your network is possible when you have the best team working for you.</p>
+      <p className={styles.featuresText}>At Marine Express you have that team. Dedicated service that will get the work done.</p>
       <div className={styles.features}>
-        {features.map((feature, i) => <Feature key={i} {...feature} />)}
+        {features.map((feature) => <Feature key={feature.title} {...feature} />)}
       </div>
     </div>
   )
