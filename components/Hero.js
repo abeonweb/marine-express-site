@@ -6,10 +6,9 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.overlay} />
-      <video autoPlay muted loop className={styles.heroVideo} poster="/images/ships.webp">
+      <video autoPlay muted loop className={styles.heroVideo} poster="/images/poster.webp">
         <source src="/images/marine-express-intro.mp4" type="video/mp4" />
       </video>
-      {/* <Image width={1000} height={500} alt="poster image mobile" className={styles.poster} src="/images/ships.webp" /> */}
       <div className={styles.heroContainer}>
         <h1 className={styles.heroTitle}>Marine Express Logistics</h1>
         <h2 className={styles.heroSubTitle}>Licensed Customs Agent.</h2>
