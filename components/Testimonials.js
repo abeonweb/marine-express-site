@@ -7,7 +7,8 @@ const Testimonials = () => {
   return (
     <section className={styles.testimonials}>
       <div className={styles.overlay} />
-      <h2 className={styles.title}>What our clients have to say</h2>
+      <h2 className={styles.title}>Testimonials</h2>
+      <h3 className={styles.subtitle}>What our clients have to say</h3>
       <div className={styles.carousel}>
         {testimonials.map((testimonial, i) => (<div key={i} className={styles.carouselItem}>
           <Testimonial  {...testimonial} />
