@@ -13,7 +13,7 @@ export default function Home(props) {
         <Service />
         <Features />
         <Testimonials />
-        <Banner bannerText={"Don't know where to start?"} link={"/services"} />
+        <Banner bannerText={"Ready to ship?"} link={"/services"} />
       </main>
 
     </div>
