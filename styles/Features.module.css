@@ -1,145 +1,93 @@
 .features {
-    margin: 1em auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    row-gap: 1em;
+    margin: 4em auto;
 }
 
 .feature {
-    background-color: transparent;
-    line-height: 1.7;
     width: 95%;
-    max-width: 400px;
-    margin: 1em auto;
-}
-
-.feature:first-of-type {
-    margin-top: 1em;
-}
-
-.featureContainer {
-    padding: 3em 0;
-}
-
-
-.imageTextContainer {
-    padding: 0;
-    margin-bottom: 2em;
-    display: flex;
-    flex-direction: column;
-}
-
-.imageContainer {
+    max-width: 600px;
+    overflow: hidden;
+    margin: 0 auto 3em;
     position: relative;
-    z-index: 100;
 }
 
-
-.image {
+.featureImage {
     width: 100%;
     height: auto;
-    max-width: 500px;
     object-fit: cover;
-    position: relative;
-    z-index: 300;
     border-radius: 10px;
+    filter: none;
 }
 
 .textContainer {
     font-size: 1.1em;
-    background-color: var(--color-primary);
-    background: linear-gradient(110deg, rgb(35, 132, 228) 22%, rgb(38, 166, 192) 44%, rgb(60, 96, 202) 90%);
     color: var(--color-secondary);
-    width: 90%;
-    margin: -2em auto 0;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 300;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 1em 2em;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    transform: translateY(-100px);
+    transition: transform 500ms ease-in;
 }
+
+.cardOverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 13, 13, 0.5);
+    position: absolute;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0.4;
+    transition: opacity 350ms ease-in;
+}
+
+.feature:hover > .textContainer {
+    transform: translateY(-200px);
+}
+
+.feature:hover > .cardOverlay {
+    opacity: 1;
+    filter: blur(2px) 
+}
+
 
 .title {
     color: rgba(255, 255, 255, 1);
-    padding: 1.5em 0;
-    font-size: 1.4em;
+    padding: 1.75em 0;
+    font-size: 1.30em;
+    font-weight: 700;
+    position: relative;
+}
+.title::after {
+    content:"";
+    width: 80%;
+    height: 5px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
 }
 
-.text,
-.captionText {
+.feature:hover .title {
+    padding-bottom: 1.5em;
+}
+.featuresText,
+.cardText {
     text-align: left;
     letter-spacing: 1px;
 }
 
-.text {
+.cardText {
+    padding-bottom: 20px;
+    font-size: 1em;
+    max-width: 300px;
+}
+
+.featuresText {
     font-size: 1.75rem;
     color: var(--color-primary);
     padding: 1em 1.2em;
 }
 
-.text:last-of-type {
-    padding-top: 0;
-}
-
-.captionText {
-    padding: 0 0 2em;
-}
-
-
 @media (min-width: 700px) {
 
-    .feature {
-        width: 100%;
-        max-width: 800px;
-        height: fit-content;
-        margin: 0 auto;
-    }
-
-    .imageTextContainer {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2em;
-    }
-
-    .featureContainer:nth-of-type(odd) .imageTextContainer {
-        flex-direction: row-reverse;
-    }
-
-    .textContainer {
-        align-self: stretch;
-        margin: 3em 0 3em -3em;
-        padding: 1em 1.5em;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0
-    }
-
-    .featureContainer:nth-of-type(odd) .textContainer {
-        margin: 3em -3em 3em 0;
-
-    }
-
-    .imageContainer::before {
-        content: "";
-        position: absolute;
-        z-index: 200;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(9, 237, 218, 0.2);
-        top: -0.8em;
-        left: 0.8em;
-        border-radius: 10px;
-
-    }
-
-    .image {
-        width: 70%;
-        min-width: 550px;
-        height: 100%;
-        /* box-shadow: 8px -3px 10px rgba(0, 0, 0, 0.8); */
-    }
 }

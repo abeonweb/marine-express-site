@@ -38,7 +38,7 @@ a {
 
 /* ************** Typography ******************* */
 .title {
-  color: var(--color-highlight-2);
+  color: var(--color-primary);
   font-size: 3em;
   margin-top: 1.2em;
   margin-bottom: 2em;
@@ -48,22 +48,8 @@ a {
   text-transform: capitalize;
 }
 
-.title::before {
-  content: "";
-  position: absolute;
-  bottom: -0.2em;
-  width: 150px;
-  height: 6px;
-  background: rgb(2, 66, 131);
-  background: linear-gradient(176deg, rgba(2, 66, 131, 1) 2%, rgba(41, 228, 188, 1) 64%, rgba(2, 35, 131, 1) 100%);
-  border-radius: 10px;
-  transition: 1.5s ease-in-out;
-}
 
-.title:hover::before {
-  transform: translateX(150%);
-  transition: 500ms ease-in-out;
-}
+
 
 .highlight {
   color: #10beb0;
