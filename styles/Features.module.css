@@ -4,9 +4,9 @@
 
 .feature {
     width: 95%;
-    max-width: 600px;
+    max-width: 550px;
     overflow: hidden;
-    margin: 0 auto 3em;
+    margin: 0 auto 5em;
     position: relative;
 }
 
@@ -21,7 +21,7 @@
 .textContainer {
     font-size: 1.1em;
     color: var(--color-secondary);
-    padding: 1em 2em;
+    padding: 1em;
     border-radius: 10px;
     position: absolute;
     z-index: 2;
@@ -49,6 +49,10 @@
     filter: blur(2px) 
 }
 
+.featureContent {
+    display: none;
+}
+
 
 .title {
     color: rgba(255, 255, 255, 1);
@@ -56,7 +60,9 @@
     font-size: 1.30em;
     font-weight: 700;
     position: relative;
+    width: 280px;
 }
+
 .title::after {
     content:"";
     width: 80%;
@@ -70,6 +76,7 @@
 .feature:hover .title {
     padding-bottom: 1.5em;
 }
+
 .featuresText,
 .cardText {
     text-align: left;
@@ -79,7 +86,7 @@
 .cardText {
     padding-bottom: 20px;
     font-size: 1em;
-    max-width: 300px;
+    width: 300px;
 }
 
 .featuresText {
@@ -88,6 +95,41 @@
     padding: 1em 1.2em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 850px) {
+    .textContainer {
+        padding: 1em 2em ;
+    }
 
+    .featureContainer {
+        display: flex;
+        row-gap: 1em;
+    }
+
+    .featureContainer:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    .featureContent {
+        display: block;
+        font-size: 2em;
+        width: 40%;
+        padding: 2.5em 0;
+        color: rgb(31, 30, 30);
+    }
+    
+    /* .featureImage {
+    
+    } */
+    
+    .feature:hover > .textContainer {
+        transform: translateY(-100px);
+    }
+    
+    .feature:hover > .cardOverlay {
+        opacity: 0;
+    }
+
+    .feature:hover .title {
+        padding-bottom: 1.75em;
+    }
 }
