@@ -10,7 +10,7 @@ function Testimonial({ image, text, info }) {
                     &quot;{text}&quot;
                 </blockquote>
             </div>
-            <div className={styles.info}>{info}</div>
+            <div className={styles.info}>- {info}</div>
         </article>
     )
 }
