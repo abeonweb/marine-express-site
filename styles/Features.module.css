@@ -145,7 +145,7 @@
     .featureContentLargeScreen {
         display: flex;
         flex-direction: column;
-        font-size: 2em;
+        font-size: 2.2em;
         width: 40%;
         height: fit-content;
         padding: 2.5em 0 1em;
@@ -175,7 +175,7 @@
     }
 
     .featureContactBtn {
-        font-size: 0.8em;
+        font-size: 0.6em;
         background-color: var(--color-primary);
         color: var(--color-secondary);
         padding: 1em 2em;
