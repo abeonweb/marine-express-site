@@ -154,26 +154,23 @@ const footerLinks = [
 const testimonials = [
     {
         image: "",
-        text: `From a business standpoint, it was excellent woking with them. The previous company didn't do a good job and we had to pay extra fees on our consignment. With Marine Express no such issues occured. They were very on point with their service delivery. I will surely work with then again.`,
+        text: `It is great working with them. They are better than the previous company I shipped with. At Marine Express were very on point with their service delivery. I will surely work with then again.`,
         info: "Haruna A."
     },
     {
         image: "",
-        text: `I will recommend Marine Express to all my friends. Very easy to work with. It made sending my packages overseas very easy.`,
-        info: "Cynthia J."
+        text: "I will recommend Marine Express to all my friends. Very easy to work with. It made sending my packages overseas very easy.",
+        info: "Cynthia"
     },
     {
         image: "",
-        text: `I made a great choice when I decided to use them. My goods got to me without any problems. It was expensive and I did not suffer any headaches doing it by myself like before.`,
+        text: "Great choice using them. My shipment got to me without any problems. It was not as expensive and I did not suffer any headaches like I used to.",
         info: "Ebuka N."
     },
     {
         image: "",
-        text: `I often had difficulties getting my goods into the country. This was mainly because 
-        I just didn't have time to take care of the logistics by my self. A friend of mine told me about 
-        Marine Express so I gave them a try. That was 2 years ago. My business has since grown more than double thanks to the effiency and 
-        thoughtfulness from Marine Express. Thank you so much.`,
-        info: "Kenneth O."
+        text: "I never have time to worry logistics. A friend of mine told me about marine express almost 2 years ago. My business has grown more than thanks to the efforts of their team. Thank you so much.",
+        info: "Bolade"
     },
 
 ]
