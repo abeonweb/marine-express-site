@@ -24,7 +24,7 @@
     filter: none;
 }
 
-.textContainer {
+.featureTextContainer {
     font-size: 1.1em;
     color: var(--color-secondary);
     padding: 1em;
@@ -38,21 +38,26 @@
 .cardOverlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(14, 13, 13, 0.5);
+    background-color: rgba(5, 3, 124, 0.8);
     position: absolute;
     border-radius: 10px;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.2;
     transition: opacity 350ms ease-in;
 }
 
-.feature:hover > .textContainer {
+.feature:hover .featureTextContainer {
     transform: translateY(-200px);
 }
 
-.feature:hover > .cardOverlay {
+.feature:hover .cardOverlay {
     opacity: 1;
-    filter: blur(2px) 
+    filter: blur(2px)
+}
+
+.feature:focus .cardOverlay {
+    opacity: 1;
+    filter: blur(2px)
 }
 
 .featureContentLargeScreen {
@@ -70,7 +75,7 @@
 }
 
 .title::after {
-    content:"";
+    content: "";
     width: 80%;
     height: 5px;
     background-color: aqua;
@@ -90,28 +95,27 @@
 }
 
 .cardText {
-    padding-bottom: 20px;
+    padding: 1em 0.5em;
     font-size: 1em;
-    width: 300px;
+    max-width: 300px;
 }
+
 
 .featuresText {
     font-size: 1.75rem;
-    color: var(--color-primary);
     padding: 1em 1.2em;
 }
 
 @media (min-width: 850px) {
-    .textContainer {
-        padding: 1em 2em ;
+    .featureTextContainer {
+        padding: 1em 2em;
     }
-    
+
     .featureContainer {
         display: flex;
-        row-gap: 1em;
         padding: 3em 1em;
     }
-    
+
     .cardOverlay {
         background-color: rgba(14, 13, 13, 0.5);
         opacity: 0.4;
@@ -130,11 +134,11 @@
         transition: transform 400ms ease-in;
     }
 
-    .featureContainer:hover  .featureImage {
+    .featureContainer:hover .featureImage {
         transform: scale(1.05);
     }
 
-    .featureContainer:hover  .cardOverlay {
+    .featureContainer:hover .cardOverlay {
         opacity: 0;
     }
 
@@ -145,20 +149,29 @@
     .featureContentLargeScreen {
         display: flex;
         flex-direction: column;
-        font-size: 2.2em;
+        font-size: 2em;
         width: 40%;
         height: fit-content;
         padding: 2.5em 0 1em;
         color: rgb(31, 30, 30);
         position: relative;
 
-    }   
-    
-    .feature:hover > .textContainer {
+    }
+
+    .featureContainer:nth-of-type(odd) .featureContentLargeScreen {
+        padding-right: 1em;
+
+    }
+    .featureContainer:nth-of-type(even) .featureContentLargeScreen {
+        padding-left: 1em;
+
+    }
+
+    .feature:hover>.featureTextContainer {
         transform: translateY(-100px);
     }
-    
-    .feature:hover > .cardOverlay {
+
+    .feature:hover>.cardOverlay {
         opacity: 0.6;
     }
 
