@@ -18,7 +18,7 @@ const Feature = ({ title, text, image, alt }) => {
           <div className={styles.cardOverlay} />
           <Image width={400} height={500} src={image} alt={alt} className={styles.featureImage} />
         </div>
-        <div className={styles.textContainer}>
+        <div className={styles.featureTextContainer}>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.cardText}>{text}</p>
         </div>
