@@ -7,7 +7,8 @@ import styles from "../styles/Service.module.css"
 const Service = () => {
     return (
         <section className={styles.services}>
-            <h2 className="title">Clearing & Forwarding Services</h2>
+            <h2 className={`title ${styles.heading}`}>Clearing and Forwarding</h2>
+            <p className={styles.titleSubtext}>We provide high quality services that give our client value. </p>
             <div className={styles.serviceContainer}>
                 {
                     services.map(({ title, text, image, icon, id }, i) => {
@@ -25,8 +26,8 @@ const Service = () => {
                                         className={styles.textContainer}
                                     >
                                         <Image width={50} height={50} className={styles.icon} src={icon} alt="" />
-                                        <h2 className={styles.title}>{title}</h2>
-                                        <p className={styles.text}>{text}</p>
+                                        <h2 className={styles.serviceTitle}>{title}</h2>
+                                        <p className={styles.serviceText}>{text}</p>
                                     </div>
                                 </Link>
                             </article>
