@@ -51,6 +51,7 @@ export async function getStaticPaths() {
         paths: [
             { params: { serviceId: 'maritime' } },
             { params: { serviceId: 'air' } },
+            { params: { serviceId: 'ro-ro' } },
             { params: { serviceId: 'other' } },
         ],
         fallback: false,
