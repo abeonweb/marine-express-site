@@ -19,7 +19,7 @@ export default function Navigation() {
     function iScrolled() {
         const header = document.querySelector("#header")
         const main = document.querySelector("#main")
-        if (window.pageYOffset > (header.clientHeight))
+        if (window.scrollY > (header.clientHeight))
             main.classList.add("sticky")
         else
             main.classList.remove("sticky")
