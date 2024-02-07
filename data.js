@@ -10,13 +10,13 @@ const features = [
         title: "To Final Destination",
         image: "/images/delivery.webp",
         alt: "Delivery man handling boxes",
-        text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that transport all across Nigeria",
+        text: "Once your shipment arrives we can get it to its final destination. We provide insured vehicles that transport all across Nigeria.",
     },
     {
         title: "Shipment Updates",
         image: "/images/information.webp",
         alt: "A couple at a computer",
-        text: "Do you want updates on your shipment? Our goal is to keep you connected. Get detailed reports whenever you want it",
+        text: "Do you want updates on your shipment? Our goal is to keep you connected. Get detailed reports whenever you want it.",
     },
     {
         title: "Warehousing Solutions",
@@ -28,7 +28,7 @@ const features = [
     title: "Quality Assurance",
     image: "/images/quality.webp",
     alt: "A man sign checking documents",
-        text: "Quality is our number one priority. We ensure that your property is safe from start of journey to destination",
+        text: "Quality of service is our top priority. We ensure that your property is handled safely to its destination.",
     },
 ]
 
@@ -41,9 +41,9 @@ const about = [
     {
         title: "Mission Statement",
         image:"/images/marine-express-truck.webp",
-        text: [`Marine Express sets the pace in the clearing and forwarding agency sector by making general importation and exportation an easy and comfortable venture. 
-        We not only ensure a safe and timely delivery of merchandise, we get your business where it needs to be in terms of our service delivery.
-        We secure cost effectiveness for you and your business without compromising quality of service. Bringing you the needed rest of mind.`],
+        text: [`Marine Express sets the pace in the clearing and forwarding agency sector by making general importation and exportation an easy and comfortable venture.`,
+        `We not only ensure a safe and timely delivery of merchandise, we get your business where it needs to be in terms of our service delivery.
+        We secure cost effectiveness for you and your business without compromising quality of service. Bringing you rest of mind.`],
     },
 ]
 
@@ -90,19 +90,19 @@ const services =[
         ]
 
     },
-    // {
-    //     id: "ro-ro",
-    //     title: "Ro-Ro",
-    //     image: "/images/ro-ro.webp",
-    //     icon: "/images/suv-car.png",
-    //     text: "Want to ship your vehicle? We handle vehicle processing to destination.",
-    //     list: [
-    //         "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
-    //         "Provision of adequate warehousing if required",
-    //         "Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
-    //     ]
+    {
+        id: "ro-ro",
+        title: "Ro-Ro",
+        image: "/images/ro-ro.webp",
+        icon: "/images/suv-car.png",
+        text: "Want to ship your vehicle? We handle vehicle processing to destination.",
+        list: [
+            "All transportation is coverd by In-transit insurance. This protects your merchandise from origin to destination.",
+            "Provision of adequate warehousing if required",
+            "Effective haulage system for all cargoes both containarized and palleticed up to the carrying  shipping company terminal",
+        ]
 
-    // },
+    },
 ]
 
 const links = [
@@ -114,10 +114,10 @@ const links = [
         name: "Services",
         path: "/services"
     },
-    // {
-    //     name: "Our Business",
-    //     path: "/about"
-    // },
+    {
+        name: "About us",
+        path: "/about"
+    },
     {
         name: "Contact us",
         path: "/contact"
