@@ -27,7 +27,7 @@ const Services = (props) => {
         ))}
       </ul> */}
       <Service />
-      <p className={styles.serviceText}>For an in depth consultation or information, <Link href={"/contact"} className={styles.contactLink}>contact us</Link> now.</p>
+      <p className={styles.serviceText}>For a consultation or more information, <Link href={"/contact"} className={styles.contactLink}>contact us</Link> now.</p>
     </section>
   )
 }
