@@ -61,8 +61,7 @@
 }
 
 .contactLink {
-    color: var(--color-highlight-3);
-    text-decoration: underline;
+    color: var(--color-highlight);
 }
 
 .image {
@@ -110,6 +109,7 @@
 
 @media (min-width: 640px) {
     .serviceText {
+        font-size: 2em;
         margin: 0 4em;
     }
 
